@@ -7,5 +7,12 @@ public class Main {
 
 		int n = scan.nextInt();
 		scan.close();
+
+		if (n < 0) {
+			System.out.println("Последовательность треугольных чисел начинается с нуля.");
+			System.out.println("Повторите ввод!");
+		} else {
+			System.out.print("Его треугольное число = " + TriangNum.calculate(n));
+		}
 	}
 }
