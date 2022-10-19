@@ -4,6 +4,7 @@
 -------------------------------------------------|-----------------------------------------------------
 `/introduction-to-java-api/FindTriangularNumber` | Каталог файлов домашнего задания
 `/FindTriangularNumber/src/Main.java`            | Главный класс, служащий точкой входа в программу
+`/FindTriangularNumber/src/TriangNum.java`       | Вычисляет `n`-ое треугольное число 
 `/FindTriangularNumber/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/FindTriangularNumber/README.md`                | Условие задачи и пример
 
@@ -18,5 +19,6 @@
 ```
 Ввод: 8
 Вывод: 36
+
 ```
 
