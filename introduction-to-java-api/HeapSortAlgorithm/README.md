@@ -3,7 +3,8 @@
 Каталоги и файлы                              | Описание
 ----------------------------------------------|-------------------------------------------------------
 `/introduction-to-java-api/HeapSortAlgorithm` | Каталог файлов домашнего задания
-`/HeapSortAlgorithm/src/HeapSort.java         |	Работа алгоритма HeapSort из двух последовательных фаз
+`/HeapSortAlgorithm/src/HeapSort.java`        |	Работа алгоритма HeapSort из двух последовательных фаз
+`/HeapSortAlgorithm/src/Main.java`            | Главный класс, служащий точкой входа в программу
 `/HeapSortAlgorithm/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/HeapSortAlgorithm/README.md`                | Условие задачи и пример
 
