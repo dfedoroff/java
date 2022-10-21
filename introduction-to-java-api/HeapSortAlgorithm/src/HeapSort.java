@@ -1,15 +1,22 @@
 public class HeapSort {
+
+	private static void swap(int a, int b) {
+
+		int temp = a;
+		a = b;
+		b = temp;
+	}
+
 	public static void sort(int[] arr) {
 
 		int len = arr.length;
+
 		for (int i = len / 2 - 1; i >= 0; i--) {
 			buildHeap(arr, i, len);
 		}
 
 		for (int i = len - 1; i >= 0; i--) {
-			int temp = arr[0];
-			arr[0] = arr[i];
-			arr[i] = temp;
+			swap(arr[0], arr[i]);
 			buildHeap(arr, 0, i);
 		}
 	}
@@ -29,9 +36,7 @@ public class HeapSort {
 		}
 
 		if (max != i) {
-			int temp = arr[i];
-			arr[i] = arr[max];
-			arr[max] = temp;
+			swap(arr[i], arr[max]);
 			buildHeap(arr, heapLen, max);
 		}
 	}
