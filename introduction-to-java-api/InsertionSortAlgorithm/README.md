@@ -3,6 +3,7 @@
 Каталоги и файлы                                   | Описание
 ---------------------------------------------------|-----------------------------------------------------
 `/introduction-to-java-api/InsertionSortAlgorithm` | Каталог файлов домашнего задания
+`/InsertionSortAlgorithm/src/HeapSort.java`        | Алгоритм сортировки вставками (Insertion Sort)
 `/InsertionSortAlgorithm/src/Main.java`            | Главный класс, служащий точкой входа в программу
 `/InsertionSortAlgorithm/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/InsertionSortAlgorithm/README.md`                | Условие задачи и пример
