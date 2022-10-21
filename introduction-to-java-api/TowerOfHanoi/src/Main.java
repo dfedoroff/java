@@ -7,5 +7,7 @@ public class Main {
 
 		int n = scan.nextInt();
 		scan.close();
+
+		GameAlgo.moveDisk('A', 'B', 'C', n);
 	}
 }
