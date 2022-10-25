@@ -85,4 +85,13 @@ public class WaveAlgo {
         }
         return path;
     }
+
+    public static void printPath(int[][] mazeTmp) {
+
+        String[] split = findShortWay(mazeTmp).split("\n");
+
+        for (int i = split.length - 1; i >= 0; i--) {
+            System.out.println(split[i] + " ");
+        }
+    }
 }
