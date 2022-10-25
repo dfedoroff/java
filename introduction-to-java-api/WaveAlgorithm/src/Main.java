@@ -24,5 +24,7 @@ public class Main {
         System.out.println("Лабиринт:");
         WaveAlgo.printArray(maze);
         WaveAlgo.countSteps(maze, mazeTmp);
+        System.out.println("Координаты кратчайшего пути выхода из лабиринта:");
+        WaveAlgo.printPath(mazeTmp);
     }
 }
