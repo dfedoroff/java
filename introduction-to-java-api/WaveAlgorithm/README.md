@@ -4,7 +4,7 @@
 ------------------------------------------|-----------------------------------------------------
 `/introduction-to-java-api/WaveAlgorithm` | Каталог файлов домашнего задания
 `/WaveAlgorithm/src/Main.java`            | Главный класс, служащий точкой входа в программу
-`/WaveAlgorithm/src/WaveAlgo.java`        | Реализация волнового алгоритма (Wave Algoruthm)
+`/WaveAlgorithm/src/WaveAlgo.java`        | Реализация волнового алгоритма (Wave Algorithm)
 `/WaveAlgorithm/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/WaveAlgorithm/README.md`                | Условие задачи и пример
 
