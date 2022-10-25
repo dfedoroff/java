@@ -20,5 +20,8 @@ public class Main {
         int start = 1;
         int[][] mazeTmp = new int[maze.length][maze[0].length];
         mazeTmp[start][start] = 1;
+
+        System.out.println("Лабиринт:");
+        WaveAlgo.printArray(maze);
     }
 }
