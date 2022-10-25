@@ -23,5 +23,6 @@ public class Main {
 
         System.out.println("Лабиринт:");
         WaveAlgo.printArray(maze);
+        WaveAlgo.countSteps(maze, mazeTmp);
     }
 }
