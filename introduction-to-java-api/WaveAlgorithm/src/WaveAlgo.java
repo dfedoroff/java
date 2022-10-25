@@ -50,4 +50,39 @@ public class WaveAlgo {
             }
         }
     }
+
+    /**
+     * Ищем кратчайший путь выхода из лабиринта. Обозначаем точку выхода переменной finish
+     * Ищем соседний элемент со значением finish - 1, переходим в эту ячейку, уменьшаем finish на 1
+     * Повторяем предыдущий шаг, пока не дойдем до исходной точки, а именно finish = 1
+     * Выводим в консоль координаты каждого шага от исходной точки до точки выхода
+     */
+    public static String findShortWay(int[][] mazeTmp) {
+
+        int i = mazeTmp.length - 2;
+        int j = mazeTmp.length - 2;
+        int finish = mazeTmp[i][j];
+        String path = ("(" + i + ", " + j + ") " + "Выход" + "\n");
+
+        while (finish > 1) {
+            if (mazeTmp[i - 1][j] == finish - 1) {
+                i = i - 1;
+                path += ("(" + i + ", " + j + ")" + "\t" + "Вниз" + "\n");
+                finish -= 1;
+            } else if (mazeTmp[i][j - 1] == finish - 1) {
+                j = j - 1;
+                path += ("(" + i + ", " + j + ")" + "\t" + "Вправо" + "\n");
+                finish -= 1;
+            } else if (mazeTmp[i + 1][j] == finish - 1) {
+                i = i + 1;
+                path += ("(" + i + ", " + j + ")" + "\t" + "Вверх" + "\n");
+                finish -= 1;
+            } else if (mazeTmp[i][j + 1] == finish - 1) {
+                j = j + 1;
+                path += ("(" + i + ", " + j + ")" + "\t" + "Влево" + "\n");
+                finish -= 1;
+            }
+        }
+        return path;
+    }
 }
