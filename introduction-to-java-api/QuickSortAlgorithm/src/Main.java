@@ -14,5 +14,7 @@ public class Main {
 			array[i] = rand.nextInt(max - min + 1) + min;
 		}
 		System.out.println("Изначальный массив: " + Arrays.toString(array));
+		QuickSort.sort(array, 0, len - 1);
+		System.out.println("Отсортированный массив: " + Arrays.toString(array));
 	}
 }
