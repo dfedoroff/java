@@ -1,4 +1,13 @@
 public class QuickSort {
+	public static void sort(int[] arr, int low, int high) {
+
+		if (low < high) {
+			int p = partition(arr, low, high);
+			sort(arr, low, p - 1);
+			sort(arr, p + 1, high);
+		}
+	}
+
 	static void swap(int[] arr, int low, int pivot) {
 
 		int temp = arr[low];
