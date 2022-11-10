@@ -4,6 +4,7 @@
 -----------------------------------------------|-------------------------------------------------------
 `/introduction-to-java-api/QuickSortAlgorithm` | Каталог файлов домашнего задания
 `/QuickSortAlgorithm/src/Main.java`            | Главный класс, служащий точкой входа в программу
+`/QuickSortAlgorithm/src/QuickSort.java`       | Работа алгоритма QuickSort
 `/QuickSortAlgorithm/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/QuickSortAlgorithm/README.md`                | Условие задачи и пример
 
