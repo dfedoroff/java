@@ -3,8 +3,9 @@
 Каталоги и файлы                            | Описание
 --------------------------------------------|-----------------------------------------------------
 `/introduction-to-java-api/CheckNumberSign` | Каталог файлов задачи 4
-`/CheckNumberSign/src/Main.java`            | Точка входа в программу
 `/CheckNumberSign/src/IntegerInput.java`    | Проверяет, является ли ввод целочисленным
+`/CheckNumberSign/src/Main.java`            | Точка входа в программу
+`/CheckNumberSign/src/SignCheck.java`       | Проверяет, является ли целое число отрицательным
 `/CheckNumberSign/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/CheckNumberSign/README.md`                | Условие задачи и примеры
 
