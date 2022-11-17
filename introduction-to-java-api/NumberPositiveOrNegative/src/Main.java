@@ -4,6 +4,8 @@ public class Main {
 	public static void main(String[] args) {
 
 		int num = validateIntInput();
+
+		SignCheck.checkSign(num);
 	}
 
 	public static int validateIntInput() {
