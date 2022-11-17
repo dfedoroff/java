@@ -2,17 +2,34 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
+
+		int num = validateIntInput();
+
+		TriangNum.calculate(num);
+	}
+
+	public static int validateIntInput() {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Введите целое неотрицательное число: ");
 
-		int n = scan.nextInt();
-		scan.close();
+		int n = 0;
+		boolean isValid = false;
 
-		if (n < 0) {
-			System.out.println("Последовательность треугольных чисел начинается с нуля.");
-			System.out.println("Повторите ввод!");
-		} else {
-			System.out.print("Его треугольное число = " + TriangNum.calculate(n));
+		while (!isValid) {
+			System.out.print("Введите целое число: ");
+			String input = scan.nextLine();
+
+			if (input == null || input.equals("")) {
+				throw new IllegalArgumentException("Пустая строка.");
+			}
+
+			try {
+				n = Integer.parseInt(input);
+				isValid = true;
+			} catch (NumberFormatException e) {
+				System.out.println("Это не целое число.");
+			}
 		}
+		scan.close();
+		return n;
 	}
 }
