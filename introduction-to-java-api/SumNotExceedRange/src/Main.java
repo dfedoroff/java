@@ -5,6 +5,8 @@ public class Main {
 
 		int n = validateIntInput();
 		int m = validateIntInput();
+
+		System.out.print(SumCalculation.isWithinRange(n, m));
 	}
 
 	public static int validateIntInput() {
