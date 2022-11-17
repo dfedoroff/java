@@ -3,6 +3,7 @@
 Каталоги и файлы                                     | Описание
 -----------------------------------------------------|-----------------------------------------------------
 `/introduction-to-java-api/NumberPositiveOrNegative` | Каталог файлов задачи 3
+`/NumberPositiveOrNegative/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/NumberPositiveOrNegative/README.md`                | Условие задачи и примеры
 
 ## Задача 3
