@@ -3,6 +3,7 @@
 Каталоги и файлы                              | Описание
 ----------------------------------------------|-----------------------------------------------------
 `/introduction-to-java-api/SumNotExceedRange` | Каталог файлов задачи 2
+`/SumNotExceedRange/src/Main.java`            | Точка входа в программу
 `/SumNotExceedRange/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/SumNotExceedRange/README.md`                | Условие задачи и примеры
 
