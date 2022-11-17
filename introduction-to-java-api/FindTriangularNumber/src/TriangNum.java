@@ -1,10 +1,13 @@
 public class TriangNum {
-	public static int calculate(int n) {
-		int result = 0;
+    public static void calculate(int n) {
 
-		for (int i = 0; i <= n; i++) {
-			result += i;
+		int triangular;
+
+	    if (n >= 0) {
+		    triangular = n * (n + 1) / 2;
+		    System.out.print("Его треугольное число: " + triangular);
+	    } else {
+		    System.out.println("Последовательность треугольных чисел начинается с ноля. Повторите ввод ...");
 		}
-		return result;
 	}
 }
