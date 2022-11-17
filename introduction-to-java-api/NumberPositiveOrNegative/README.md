@@ -4,6 +4,7 @@
 -----------------------------------------------------|-----------------------------------------------------
 `/introduction-to-java-api/NumberPositiveOrNegative` | Каталог файлов задачи 3
 `/NumberPositiveOrNegative/src/Main.java`            | Точка входа в программу
+`/NumberPositiveOrNegative/src/SignCheck.java`       | Проверяет, является ли целое число отрицательным
 `/NumberPositiveOrNegative/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/NumberPositiveOrNegative/README.md`                | Условие задачи и примеры
 
