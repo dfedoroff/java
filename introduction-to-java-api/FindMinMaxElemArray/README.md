@@ -3,6 +3,7 @@
 Каталоги и файлы                                | Описание
 ------------------------------------------------|-----------------------------------------------------
 `/introduction-to-java-api/FindMinMaxElemArray` | Каталог файлов задачи 12
+`/FindMinMaxElemArray/src/ArrayManip.java`      | Выполняет операции над массивом
 `/FindMinMaxElemArray/src/Main.java`            | Точка входа в программу
 `/FindMinMaxElemArray/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/FindMinMaxElemArray/README.md`                | Условие задачи и пример
