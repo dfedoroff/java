@@ -18,4 +18,17 @@ public class ArrayManip {
 	public static void printArray(int[] arr) {
 		System.out.println(Arrays.toString(arr));
 	}
+
+	static void replaceElem(int[] arr) {
+
+		int len = arr.length;
+
+		for (int i = 0; i < len; i++) {
+			if (arr[i] == 1) {
+				arr[i] = 0;
+			} else {
+				arr[i] = 1;
+			}
+		}
+	}
 }
