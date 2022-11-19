@@ -3,6 +3,7 @@
 Каталоги и файлы                                 | Описание
 -------------------------------------------------|-----------------------------------------------------
 `/introduction-to-java-api/ReplaceArrayElements` | Каталог файлов задачи 7
+`/ReplaceArrayElements/src/ArrayManip.java`      | Выполняет операции над массивом
 `/ReplaceArrayElements/src/Main.java`            | Точка входа в программу
 `/ReplaceArrayElements/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/ReplaceArrayElements/README.md`                | Условие задачи и пример
