@@ -11,4 +11,8 @@ public class ArrayManip {
 		}
 		return arr;
 	}
+
+	public static void printArray(int[] arr) {
+		System.out.println(Arrays.toString(arr));
+	}
 }
