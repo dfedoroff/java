@@ -5,6 +5,8 @@ public class Main {
 
 		String myStr = validateStrInput();
 		int myNum = validateIntInput();
+
+		LinePrint.printNTimes(myStr, myNum);
 	}
 
 	public static int validateIntInput() {
