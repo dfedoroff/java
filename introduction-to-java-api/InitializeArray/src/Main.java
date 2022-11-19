@@ -8,6 +8,8 @@ public class Main {
 		System.out.print("Введите одно значение для всех элементов массива: ");
 		int initialValue = validateIntInput();
 		int[] array = ArrayManip.createArray(len, initialValue);
+		System.out.print("Массив: ");
+		ArrayManip.printArray(array);
 	}
 
 	public static int validateIntInput() {
