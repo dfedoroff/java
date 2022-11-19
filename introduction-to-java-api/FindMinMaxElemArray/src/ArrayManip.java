@@ -18,4 +18,20 @@ public class ArrayManip {
 	public static void printArray(int[] arr) {
 		System.out.println(Arrays.toString(arr));
 	}
+
+	static void findMinMaxElem(int[] arr) {
+
+		int min = arr[0];
+		int max = arr[0];
+
+		for (int j : arr) {
+			if (j < min) {
+				min = j;
+			} else if (j > max) {
+				max = j;
+			}
+		}
+		System.out.println("Минимальный элемент массива: " + min);
+		System.out.println("Максимальный элемент массива: " + max);
+	}
 }
