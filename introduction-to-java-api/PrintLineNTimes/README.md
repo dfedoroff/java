@@ -3,6 +3,7 @@
 Каталоги и файлы                              | Описание
 ----------------------------------------------|-----------------------------------------------------
 `/introduction-to-java-api/PrintStringNTimes` | Каталог файлов задачи 5
+`/PrintStringNTimes/src/Main.java`            | Точка входа в программу
 `/PrintStringNTimes/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/PrintStringNTimes/README.md`                | Условие задачи и пример
 
