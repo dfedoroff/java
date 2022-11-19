@@ -5,6 +5,7 @@ public class Main {
 
 		System.out.print("Введите размер массива: ");
 		int size = validateIntInput();
+		int[] array = ArrayManip.createArray(size);
 	}
 
 	public static int validateIntInput() {
