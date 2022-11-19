@@ -7,6 +7,7 @@ public class Main {
 		int len = validateIntInput();
 		System.out.print("Введите одно значение для всех элементов массива: ");
 		int initialValue = validateIntInput();
+		int[] array = ArrayManip.createArray(len, initialValue);
 	}
 
 	public static int validateIntInput() {
