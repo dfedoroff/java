@@ -8,6 +8,7 @@ public class Main {
 		int[] array = ArrayManip.createArray(size);
 		System.out.println("Оригинальный массив: ");
 		ArrayManip.printArray(array);
+		ArrayManip.replaceElem(array);
 	}
 
 	public static int validateIntInput() {
