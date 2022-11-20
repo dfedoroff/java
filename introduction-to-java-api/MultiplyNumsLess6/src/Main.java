@@ -5,5 +5,7 @@ public class Main {
 		System.out.println("Оригинальный массив: ");
 		ArrayManip.printArray(array);
 		ArrayManip.multiply(array);
+		System.out.println("Обновленный массив: ");
+		ArrayManip.printArray(array);
 	}
 }
