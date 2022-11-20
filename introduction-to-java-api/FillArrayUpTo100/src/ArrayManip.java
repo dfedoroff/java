@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArrayManip {
 
 	public static int[] createArray(int len) {
@@ -8,5 +10,9 @@ public class ArrayManip {
 			arr[i - 1] = i;
 		}
 		return arr;
+	}
+
+	public static void printArray(int[] arr) {
+		System.out.println(Arrays.toString(arr));
 	}
 }
