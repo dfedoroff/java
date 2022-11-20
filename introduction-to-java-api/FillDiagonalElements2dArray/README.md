@@ -3,6 +3,7 @@
 Каталоги и файлы                                        | Описание
 --------------------------------------------------------|-------------------------------------------------------
 `/introduction-to-java-api/FillDiagonalElements2dArray` | Каталог файлов задачи 10
+`/FillDiagonalElements2dArray/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/FillDiagonalElements2dArray/README.md`                | Условие задачи и пример
 
 ## Задача 10
