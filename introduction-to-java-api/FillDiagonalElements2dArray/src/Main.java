@@ -5,6 +5,7 @@ public class Main {
 
 		System.out.print("Введите размер двумерного массива: ");
 		int size = validateIntInput();
+		int[][] array = new int[size][size];
 	}
 
 	public static int validateIntInput() {
