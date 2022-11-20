@@ -6,7 +6,11 @@ public class Main {
 		System.out.print("Введите размер двумерного массива: ");
 		int size = validateIntInput();
 		int[][] array = new int[size][size];
+		System.out.println("Пустой массив: ");
+		ArrayManip.printArray(array);
 		ArrayManip.fillDiagonal(array);
+		System.out.println("Заполненный массив: ");
+		ArrayManip.printArray(array);
 	}
 
 	public static int validateIntInput() {
