@@ -3,6 +3,7 @@
 Каталоги и файлы                              | Описание
 ----------------------------------------------|-----------------------------------------------------
 `/introduction-to-java-api/MultiplyNumsLess6` | Каталог файлов задачи 9
+`/MultiplyNumsLess6/src/Main.java`            | Точка входа в программу
 `/MultiplyNumsLess6/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/MultiplyNumsLess6/README.md`                | Условие задачи и пример
 
