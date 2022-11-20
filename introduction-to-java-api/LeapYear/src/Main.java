@@ -5,6 +5,8 @@ public class Main {
 
 		System.out.print("Введите високосный год: ");
 		int year = validateIntInput();
+
+		System.out.print(LeapYear.isLeap(year));
 	}
 
 	public static int validateIntInput() {
