@@ -4,6 +4,7 @@
 --------------------------------------------|-----------------------------------------------------
 `/introduction-to-java-api/CheckPalindrome` | Каталог файлов домашнего задания
 `/CheckPalindrome/src/Main.java`            | Точка входа в программу
+`/CheckPalindrome/src/PalindromeValid.java` | Проверяет, является ли строка палиндромом
 `/CheckPalindrome/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/CheckPalindrome/README.md`                | Условие задачи и примеры
 
