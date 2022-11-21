@@ -4,6 +4,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		String myStr = validateStrInput();
+		System.out.print(PalindromeValid.isPalindrome(myStr));
 	}
 
 	public static String validateStrInput() {
