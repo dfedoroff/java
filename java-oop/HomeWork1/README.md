@@ -5,6 +5,13 @@
 `/java-oop/HomeWork1`                | Каталог файлов домашнего задания
 `/HomeWork1/src/Main.java`           | Точка входа в программу
 `/HomeWork1/src/BasicCharacter.java` | Суперкласс, содержащий конструктор класса, get() и set() методы, а также другие методы, необходимые для вывода информации о персонажах игры
+`/HomeWork1/src/Archer.java`         | Класс персонажа `Арбалетчик`
+`/HomeWork1/src/Farmer.java`         | Класс персонажа `Крестьянин`
+`/HomeWork1/src/Monk.java`           | Класс персонажа `Монах`
+`/HomeWork1/src/Outlaw.java`         | Класс персонажа `Разбойник`
+`/HomeWork1/src/Sniper.java`         | Класс персонажа `Снайпер`
+`/HomeWork1/src/Spearman.java`       | Класс персонажа `Копейщик`
+`/HomeWork1/src/Wizard.java`         | Класс персонажа `Колдун`
 `/HomeWork1/.gitignore`              | Файл для исключения из индексации Git файлов и папок
 `/HomeWork1/README.md`               | Условие задачи
 `/HomeWork1/characters_details.xlsx` | Исходные данные персонажей игры
