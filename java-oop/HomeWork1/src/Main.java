@@ -16,5 +16,8 @@ public class Main {
 
 		ArrayList<BasicCharacter> charactersRandom =
 				BasicCharacter.createRandomCharacters(charactersLimit, charactersUnique);
+
+		System.out.println("Характеристики всех " + characterSelected + " персонажей из " + charactersLimit + " сгенерированных.");
+		BasicCharacter.printRandomCharacterDetails(charactersRandom, characterSelected);
 	}
 }
