@@ -13,5 +13,8 @@ public class Main {
 
 		System.out.println("Характеристики " + charactersUnique + " базовых уникальных персонажей:");
 		BasicCharacter.printCharacterDetails(characters);
+
+		ArrayList<BasicCharacter> charactersRandom =
+				BasicCharacter.createRandomCharacters(charactersLimit, charactersUnique);
 	}
 }
