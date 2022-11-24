@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 
 public abstract class BasicCharacter {
 
@@ -41,6 +42,26 @@ public abstract class BasicCharacter {
 				+ ", скорость=" + speed
 				+ ", доставка=" + isDelivery
 				+ ", магия=" + isMagic;
+	}
+
+	public static ArrayList<BasicCharacter> createRandomCharacters(int lim, int size) {
+
+		ArrayList<BasicCharacter> list = new ArrayList<>();
+
+		Random rand = new Random();
+
+		for (int i = 0; i < lim; i++) {
+			switch (rand.nextInt(size)) {
+				case 1 -> list.add(new Archer());
+				case 2 -> list.add(new Farmer());
+				case 3 -> list.add(new Outlaw());
+				case 4 -> list.add(new Sniper());
+				case 5 -> list.add(new Monk());
+				case 6 -> list.add(new Wizard());
+				case 7 -> list.add(new Spearman());
+			}
+		}
+		return list;
 	}
 
 	public static void printCharacterDetails(ArrayList<BasicCharacter> list) {
