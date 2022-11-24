@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public abstract class BasicCharacter {
 
 	private static int count;
@@ -24,5 +26,19 @@ public abstract class BasicCharacter {
 		this.speed = speed;
 		this.isDelivery = isDelivery;
 		this.isMagic = isMagic;
+	}
+
+	@Override
+	public String toString() {
+		return "идентификатор=" + id
+				+ ", персонаж=" + character
+				+ ", атака=" + attack
+				+ ", защита=" + defence
+				+ ", выстрелы=" + shots
+				+ ", урон=" + Arrays.toString(damage)
+				+ ", здоровье=" + health
+				+ ", скорость=" + speed
+				+ ", доставка=" + isDelivery
+				+ ", магия=" + isMagic;
 	}
 }
