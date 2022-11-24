@@ -10,5 +10,8 @@ public class Main {
 		int charactersLimit = 50;
 		int charactersUnique = characters.size();
 		String characterSelected = "Monk";
+
+		System.out.println("Характеристики " + charactersUnique + " базовых уникальных персонажей:");
+		BasicCharacter.printCharacterDetails(characters);
 	}
 }
