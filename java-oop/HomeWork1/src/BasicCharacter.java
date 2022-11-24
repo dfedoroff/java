@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public abstract class BasicCharacter {
@@ -40,6 +41,13 @@ public abstract class BasicCharacter {
 				+ ", скорость=" + speed
 				+ ", доставка=" + isDelivery
 				+ ", магия=" + isMagic;
+	}
+
+	public static void printCharacterDetails(ArrayList<BasicCharacter> list) {
+		for (BasicCharacter characterType : list) {
+			System.out.println(characterType);
+		}
+		System.out.println();
 	}
 
 	public int getCharacterID() {
