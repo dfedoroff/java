@@ -3,6 +3,7 @@
 Каталоги и файлы                                | Описание
 ------------------------------------------------|-----------------------------------------------------
 `/introduction-to-java-api/MinMaxAverageOfList` | Каталог файлов задачи 2
+`/MinMaxAverageOfList/src/Main.java`            | Точка входа в программу
 `/MinMaxAverageOfList/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/MinMaxAverageOfList/README.md`                | Условие задачи и пример
 
