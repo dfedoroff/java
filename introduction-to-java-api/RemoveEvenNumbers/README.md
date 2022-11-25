@@ -4,6 +4,7 @@
 ----------------------------------------------|-----------------------------------------------------
 `/introduction-to-java-api/RemoveEvenNumbers` | Каталог файлов задачи 1
 `/RemoveEvenNumbers/src/Main.java`            | Точка входа в программу
+`/RemoveEvenNumbers/src/ListManip.java`       | Выполняет операции над списком
 `/RemoveEvenNumbers/.gitignore`               | Файл для исключения из индексации Git файлов и папок
 `/RemoveEvenNumbers/README.md`                | Условие задачи и примеры
 
