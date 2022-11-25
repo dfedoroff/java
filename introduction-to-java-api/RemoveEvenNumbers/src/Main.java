@@ -9,6 +9,8 @@ public class Main {
 		int range = 10;
 
 		ListManip.fillListRandomNums(list, size, range);
+		System.out.println("Оригинальный список: " + list);
 		ListManip.removeEvenNums(list);
+		System.out.println("Обновленный список: " + list);
 	}
 }
