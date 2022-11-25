@@ -10,5 +10,6 @@ public class Main {
 
 		ListManip.fillListRandomNums(list, size, range);
 		System.out.println("Оригинальный список: " + list);
+		ListManip.findMinMaxElem(list);
 	}
 }
