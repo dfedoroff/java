@@ -11,9 +11,6 @@ public class Main {
 		ListManip.fillListRandomNums(list, size, range);
 		System.out.println("Оригинальный список: " + list);
 		ListManip.findMinMaxElem(list);
-<<<<<<< HEAD
 		ListManip.findAvg(list);
-=======
->>>>>>> 97595b8daeee9cdb265c9a563b64ef7e942715a7
 	}
 }
