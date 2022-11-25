@@ -9,5 +9,6 @@ public class Main {
 		int range = 10;
 
 		ListManip.fillListRandomNums(list, size, range);
+		ListManip.removeEvenNums(list);
 	}
 }
