@@ -7,5 +7,7 @@ public class Main {
 
 		int size = 10;
 		int range = 10;
+
+		ListManip.fillListRandomNums(list, size, range);
 	}
 }
