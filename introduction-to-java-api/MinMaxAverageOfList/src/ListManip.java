@@ -28,4 +28,17 @@ public class ListManip {
 		System.out.println("Минимальное число списка: " + min);
 		System.out.println("Максимальное число списка: " + max);
 	}
+
+	public static void findAvg(ArrayList<Integer> lst) {
+
+		float sum = 0;
+		float avg = sum;
+		int len = lst.size();
+
+		for (int i = 0; i < len; i++) {
+			sum += lst.get(i);
+			avg = sum / len;
+		}
+		System.out.println("Среднее арифметическое значение чисел списка: " + avg);
+	}
 }
