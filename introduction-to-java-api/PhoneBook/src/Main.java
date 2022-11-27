@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Main {
 	public static void main(String[] args) {
 
@@ -7,5 +9,8 @@ public class Main {
 		phoneBook.add("Hamilton", "344");
 		phoneBook.add("Brooks", "344");
 		phoneBook.add("Brooks", "122");
+
+		List<String> strings = phoneBook.get("Brooks");
+		System.out.println(strings);
 	}
 }
