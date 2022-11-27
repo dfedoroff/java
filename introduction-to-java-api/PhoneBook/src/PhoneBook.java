@@ -10,4 +10,16 @@ public class PhoneBook {
 	public void add(String surname, String number) {
 		book.put(number, surname);
 	}
+
+	public List<String> get(String surname) {
+
+		ArrayList<String> resultSearch = new ArrayList<>();
+
+		for (Map.Entry<String, String> entry : book.entrySet()) {
+			if (entry.getValue().equals(surname)) {
+				resultSearch.add(entry.getKey());
+			}
+		}
+		return resultSearch;
+	}
 }
