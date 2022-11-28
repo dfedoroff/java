@@ -1,8 +1,12 @@
+package Classes;
+
+import Interfaces.Informable;
+import Interfaces.Stepable;
+
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Random;
 
-public abstract class BasicCharacter {
+public abstract class BasicCharacter implements Informable, Stepable {
 
 	private static int count;
 
@@ -12,26 +16,28 @@ public abstract class BasicCharacter {
 	private int defence;
 	private int shots;
 	private int[] damage;
+	private double maxHealth;
 	private double health;
 	private int speed;
 	private boolean isDelivery;
 	private boolean isMagic;
+	protected ArrayList<BasicCharacter> squad;
 
-	public BasicCharacter(int attack, int defence, int shots, int[] damage, double health, int speed, boolean isDelivery, boolean isMagic) {
+	public BasicCharacter(int attack, int defence, int shots, int[] damage, double maxHealth, int speed, boolean isDelivery, boolean isMagic) {
 		this.id = ++count;
 		this.character = getClass().getName();
 		this.attack = attack;
 		this.defence = defence;
 		this.shots = shots;
 		this.damage = damage;
-		this.health = health;
+		this.health = maxHealth;
+		this.maxHealth = maxHealth;
 		this.speed = speed;
 		this.isDelivery = isDelivery;
 		this.isMagic = isMagic;
 	}
 
-	@Override
-	public String toString() {
+	public String getInfo() {
 		return "идентификатор=" + id
 				+ ", персонаж=" + character
 				+ ", атака=" + attack
@@ -39,6 +45,7 @@ public abstract class BasicCharacter {
 				+ ", выстрелы=" + shots
 				+ ", урон=" + Arrays.toString(damage)
 				+ ", здоровье=" + health
+				+ ", максимум здоровья=" + maxHealth
 				+ ", скорость=" + speed
 				+ ", доставка=" + isDelivery
 				+ ", магия=" + isMagic;
