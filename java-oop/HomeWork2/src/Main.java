@@ -9,6 +9,9 @@ public class Main {
 		int charactersLimit = 10;
 		int charactersBrightSide = 5;
 		int charactersDarkSide = 4;
+
+		ArrayList<BasicCharacter> squadBrightSide = createSquads(charactersLimit, charactersBrightSide);
+		ArrayList<BasicCharacter> squadDarkSide = createSquads(charactersLimit, charactersDarkSide);
 	}
 
 	public static ArrayList<BasicCharacter> createSquads(int charactersLimit, int charactersUnique) {
