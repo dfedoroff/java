@@ -47,4 +47,21 @@ public class Main {
 		}
 		return list;
 	}
+
+	public static void heal(ArrayList<BasicCharacter> squad, String healer) {
+
+		squad.add(new Outlaw(squad));
+		squad.get(10).setHealth(2);
+		System.out.println(squad.get(10));
+		System.out.println("Здоровье раненного разбойника до лечения: " + squad.get(10).getHealth());
+
+		if (healer.equalsIgnoreCase("Monk")) {
+			squad.add(new Monk(squad));
+		} else {
+			squad.add(new Wizard(squad));
+		}
+		squad.get(11).step();
+		System.out.println("Здоровье раненного разбойника после лечения: " + squad.get(10).getHealth());
+		System.out.println("Максимальный показатель здоровья разбойника: " + squad.get(10).getMaxHealth());
+	}
 }
