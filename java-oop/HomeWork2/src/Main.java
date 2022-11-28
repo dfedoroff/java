@@ -12,6 +12,13 @@ public class Main {
 
 		ArrayList<BasicCharacter> squadBrightSide = createSquads(charactersLimit, charactersBrightSide);
 		ArrayList<BasicCharacter> squadDarkSide = createSquads(charactersLimit, charactersDarkSide);
+
+		System.out.println("Отряд светлой стороны:");
+		squadBrightSide.forEach(System.out::println);
+		System.out.println();
+		System.out.println("Отряд тёмной стороны:");
+		squadDarkSide.forEach(System.out::println);
+		System.out.println();
 	}
 
 	public static ArrayList<BasicCharacter> createSquads(int charactersLimit, int charactersUnique) {
