@@ -51,6 +51,15 @@ public abstract class BasicCharacter implements Informable, Stepable {
 				+ ", магия=" + isMagic;
 	}
 
+	@Override
+	public String toString() {
+		return this.getInfo();
+	}
+
+	@Override
+	public void step() {
+	}
+
 	public int getCharacterID() {
 		return id;
 	}
