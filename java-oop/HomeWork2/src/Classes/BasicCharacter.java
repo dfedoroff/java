@@ -65,7 +65,7 @@ public abstract class BasicCharacter implements Informable, Stepable {
 	}
 
 	public void setAttack(int attack) {
-		if (attack > 0) {
+		if (attack > 0 && attack < 18) {
 			this.attack = attack;
 		} else {
 			System.out.println("Вы пытаетесь установить неверное значение атаки.");
@@ -78,7 +78,7 @@ public abstract class BasicCharacter implements Informable, Stepable {
 	}
 
 	public void setDefense(int defence) {
-		if (defence > 0) {
+		if (defence > 0 && defence <= 12) {
 			this.defence = defence;
 		} else {
 			System.out.println("Вы пытаетесь установить неверное значение защиты.");
@@ -91,7 +91,7 @@ public abstract class BasicCharacter implements Informable, Stepable {
 	}
 
 	public void setShots(int shots) {
-		if (shots >= 0) {
+		if (shots >= 0 && shots <= 32) {
 			this.shots = shots;
 		} else {
 			System.out.println("Вы пытаетесь установить неверное значение выстрелов.");
@@ -117,7 +117,7 @@ public abstract class BasicCharacter implements Informable, Stepable {
 	}
 
 	public void setHealth(double health) {
-		if (health > 0) {
+		if (health > 0 && health <= 30) {
 			this.health = health;
 		} else {
 			System.out.println("Вы пытаетесь установить неверное значение здоровья.");
@@ -129,8 +129,21 @@ public abstract class BasicCharacter implements Informable, Stepable {
 		return health;
 	}
 
+	public void setMaxHealth(double maxHealth) {
+		if (maxHealth > 0 && maxHealth <= 30) {
+			this.maxHealth = maxHealth;
+		} else {
+			System.out.println("Вы пытаетесь установить неверное значение здоровья.");
+			System.out.println("Введите целое число в диапазоне от 1 до 30 включительно.");
+		}
+	}
+
+	public double getMaxHealth() {
+		return maxHealth;
+	}
+
 	public void setSpeed(int speed) {
-		if (speed > 2) {
+		if (speed >= 3 && speed <= 9) {
 			this.speed = speed;
 		} else {
 			System.out.println("Вы пытаетесь установить неверное значение скорости.");
