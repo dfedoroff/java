@@ -44,14 +44,6 @@ public abstract class BasicCharacter {
 				+ ", магия=" + isMagic;
 	}
 
-	public static void printRandomCharacterDetails(ArrayList<BasicCharacter> list, String character) {
-		for (BasicCharacter characterType : list) {
-			if (characterType.getClass().getName().equalsIgnoreCase(character)) {
-				System.out.println(characterType);
-			}
-		}
-	}
-
 	public static void printCharacterDetails(ArrayList<BasicCharacter> list) {
 		for (BasicCharacter characterType : list) {
 			System.out.println(characterType);
