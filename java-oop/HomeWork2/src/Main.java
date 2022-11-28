@@ -10,8 +10,8 @@ public class Main {
 		int charactersBrightSide = 5;
 		int charactersDarkSide = 4;
 
-		ArrayList<BasicCharacter> squadBrightSide = createSquads(charactersLimit, charactersBrightSide);
-		ArrayList<BasicCharacter> squadDarkSide = createSquads(charactersLimit, charactersDarkSide);
+		ArrayList<BasicCharacter> squadBrightSide = createSquad(charactersLimit, charactersBrightSide);
+		ArrayList<BasicCharacter> squadDarkSide = createSquad(charactersLimit, charactersDarkSide);
 
 		System.out.println("Отряд светлой стороны:");
 		squadBrightSide.forEach(System.out::println);
@@ -19,9 +19,15 @@ public class Main {
 		System.out.println("Отряд тёмной стороны:");
 		squadDarkSide.forEach(System.out::println);
 		System.out.println();
+
+		System.out.println("Лечим защитника светлой стороны:");
+		heal(squadBrightSide, "Monk");
+		System.out.println();
+		System.out.println("Лечим защитника тёмной стороны:");
+		heal(squadDarkSide, "Wizard");
 	}
 
-	public static ArrayList<BasicCharacter> createSquads(int charactersLimit, int charactersUnique) {
+	public static ArrayList<BasicCharacter> createSquad(int charactersLimit, int charactersUnique) {
 
 		ArrayList<BasicCharacter> list = new ArrayList<>();
 
