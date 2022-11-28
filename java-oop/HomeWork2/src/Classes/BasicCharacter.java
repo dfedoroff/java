@@ -44,13 +44,6 @@ public abstract class BasicCharacter {
 				+ ", магия=" + isMagic;
 	}
 
-	public static void printCharacterDetails(ArrayList<BasicCharacter> list) {
-		for (BasicCharacter characterType : list) {
-			System.out.println(characterType);
-		}
-		System.out.println();
-	}
-
 	public int getCharacterID() {
 		return id;
 	}
