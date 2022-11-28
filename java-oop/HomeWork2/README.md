@@ -4,6 +4,8 @@
 ---------------------------------------------|-------------------------------------------------------
 `/java-oop/HomeWork2`                        | Каталог файлов домашнего задания
 `/HomeWork2/src/Main.java`                   | Точка входа в программу
+`/HomeWork2/src/Interfaces/Informable.java`  | Интерфейс String getInfo()
+`/HomeWork2/src/Interfaces/Stepable.java`    | Интерфейс void step()
 `/HomeWork2/src/Classes/BasicCharacter.java` | Суперкласс, содержащий конструктор класса, get() и set() методы, а также другие методы, необходимые для вывода информации о персонажах игры
 `/HomeWork2/src/Classes/Archer.java`         | Класс персонажа `Арбалетчик`
 `/HomeWork2/src/Classes/Farmer.java`         | Класс персонажа `Крестьянин`
