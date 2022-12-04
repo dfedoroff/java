@@ -8,36 +8,39 @@ import java.util.Arrays;
 
 public abstract class BasicCharacter implements Informable, Stepable {
 
-	private static int count;
+	public static int count;
 
 	private int id;
-	private String character;
-	private int attack;
-	private int defence;
-	private int shots;
-	private int[] damage;
-	private double maxHealth;
-	private double health;
-	private int speed;
-	private boolean isDelivery;
-	private boolean isMagic;
-	protected ArrayList<BasicCharacter> squad;
+	protected String character;
+	protected int attack;
+	protected int defence;
+	protected int shots;
+	protected int[] damage;
+	protected double maxHealth;
+	protected double health;
+	protected int speed;
+	protected Boolean isDelivery;
+	protected Boolean isMagic;
+	protected String squad;
+	protected Coordinates position;
 
-	public BasicCharacter(int attack, int defence, int shots, int[] damage, double maxHealth, int speed, boolean isDelivery, boolean isMagic) {
-		this.id = ++count;
-		this.character = getClass().getName();
+	public BasicCharacter(String character, int attack, int defence, int shots, int[] damage, double maxHealth, int speed, Boolean isDelivery, Boolean isMagic, String squad) {
+		id = ++count;
+		this.character = character;
 		this.attack = attack;
 		this.defence = defence;
 		this.shots = shots;
 		this.damage = damage;
-		this.health = maxHealth;
 		this.maxHealth = maxHealth;
+		this.health = maxHealth;
 		this.speed = speed;
 		this.isDelivery = isDelivery;
 		this.isMagic = isMagic;
+		this.squad = squad;
 	}
 
-	public String getInfo() {
+	@Override
+	public String toString() {
 		return "идентификатор=" + id
 				+ ", персонаж=" + character
 				+ ", атака=" + attack
@@ -48,20 +51,27 @@ public abstract class BasicCharacter implements Informable, Stepable {
 				+ ", максимум здоровья=" + maxHealth
 				+ ", скорость=" + speed
 				+ ", доставка=" + isDelivery
-				+ ", магия=" + isMagic;
+				+ ", магия=" + isMagic
+				+ ", squad = " + squad;
 	}
 
 	@Override
-	public String toString() {
-		return this.getInfo();
+	public String getInfo(){
+		return  "идентификатор=" + id
+				+ ", персонаж=" + character
+				+ ", здоровье=" + health
+				+ ", squad = " + squad;
 	}
-
 	@Override
-	public void step() {
+	public void step(ArrayList<BasicCharacter> squad) {
 	}
 
-	public int getCharacterID() {
+	public int getId() {
 		return id;
+	}
+
+	public String getCharacter() {
+		return character;
 	}
 
 	public void setAttack(int attack) {
@@ -116,19 +126,6 @@ public abstract class BasicCharacter implements Informable, Stepable {
 		return damage;
 	}
 
-	public void setHealth(double health) {
-		if (health > 0 && health <= 30) {
-			this.health = health;
-		} else {
-			System.out.println("Вы пытаетесь установить неверное значение здоровья.");
-			System.out.println("Введите целое число в диапазоне от 1 до 30 включительно.");
-		}
-	}
-
-	public double getHealth() {
-		return health;
-	}
-
 	public void setMaxHealth(double maxHealth) {
 		if (maxHealth > 0 && maxHealth <= 30) {
 			this.maxHealth = maxHealth;
@@ -140,6 +137,19 @@ public abstract class BasicCharacter implements Informable, Stepable {
 
 	public double getMaxHealth() {
 		return maxHealth;
+	}
+
+	public void setHealth(double health) {
+		if (health > 0 && health <= 30) {
+			this.health = health;
+		} else {
+			System.out.println("Вы пытаетесь установить неверное значение здоровья.");
+			System.out.println("Введите целое число в диапазоне от 1 до 30 включительно.");
+		}
+	}
+
+	public double getHealth() {
+		return health;
 	}
 
 	public void setSpeed(int speed) {
@@ -169,5 +179,13 @@ public abstract class BasicCharacter implements Informable, Stepable {
 
 	public boolean isMagic() {
 		return isMagic;
+	}
+
+	public String getSquad() {
+		return squad;
+	}
+
+	public Coordinates getPosition() {
+		return position;
 	}
 }
