@@ -1,17 +1,9 @@
 package Classes;
 
-import Interfaces.Stepable;
+public class Spearman extends BasicCharacter {
 
-import java.util.ArrayList;
-
-public class Spearman extends BasicCharacter implements Stepable {
-
-    public Spearman(ArrayList<BasicCharacter> squad) {
-        super(4, 5, 0, new int[]{1,3}, 10, 4, false, false);
-        super.squad = squad;
-    }
-
-    @Override
-    public void step() {
+    public Spearman(String squad, int x, int y) {
+        super("Spearman", 4, 5, 0, new int []{1, 3}, 10, 4, false, false, squad);
+        super.position = new Coordinates(x, y);
     }
 }
