@@ -1,17 +1,9 @@
 package Classes;
 
-import Interfaces.Stepable;
+public class Farmer extends BasicCharacter {
 
-import java.util.ArrayList;
-
-public class Farmer extends BasicCharacter implements Stepable {
-
-    public Farmer(ArrayList<BasicCharacter> squad) {
-        super(1, 1, 0, new int[]{1,1}, 1, 3, true, false);
-        super.squad = squad;
-    }
-
-    @Override
-    public void step() {
+    public Farmer(String squad, int x, int y) {
+        super("Farmer", 1, 1, 0, new int []{1,1}, 1, 3, true, false, squad);
+        super.position = new Coordinates(x, y);
     }
 }
