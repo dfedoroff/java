@@ -1,17 +1,9 @@
 package Classes;
 
-import Interfaces.Stepable;
+public class Archer extends BasicCharacter {
 
-import java.util.ArrayList;
-
-public class Archer extends BasicCharacter implements Stepable {
-
-    public Archer(ArrayList<BasicCharacter> squad) {
-        super(6, 3, 16, new int[]{2, 3}, 10, 4, false, false);
-        super.squad = squad;
-    }
-
-    @Override
-    public void step() {
+    public Archer(String squad, int x, int y) {
+        super("Archer", 6, 3, 16, new int []{2, 3}, 10, 4, false, false, squad);
+        super.position = new Coordinates(x, y);
     }
 }
