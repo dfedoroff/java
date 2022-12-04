@@ -1,17 +1,9 @@
 package Classes;
 
-import Interfaces.Stepable;
+public class Sniper extends BasicCharacter {
 
-import java.util.ArrayList;
-
-public class Sniper extends BasicCharacter implements Stepable {
-
-    public Sniper(ArrayList<BasicCharacter> squad) {
-        super(4, 5, 0, new int[]{1,3}, 10, 4, false, false);
-        super.squad = squad;
-    }
-
-    @Override
-    public void step() {
+    public Sniper(String squad, int x, int y) {
+        super("Sniper", 12, 10, 32, new int []{8, 10}, 15, 9, false, false, squad);
+        super.position = new Coordinates(x, y);
     }
 }
