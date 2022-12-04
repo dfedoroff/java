@@ -2,72 +2,54 @@ import Classes.*;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
+
+	public static final int SQUAD_SIZE = 10;
+	public static ArrayList<BasicCharacter> darkSide;
+	public static ArrayList<BasicCharacter> brightSide;
+
 	public static void main(String[] args) {
 
-		int charactersLimit = 10;
-		int charactersBrightSide = 5;
-		int charactersDarkSide = 4;
+		init();
 
-		ArrayList<BasicCharacter> squadBrightSide = createSquad(charactersLimit, charactersBrightSide);
-		ArrayList<BasicCharacter> squadDarkSide = createSquad(charactersLimit, charactersDarkSide);
+		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Отряд светлой стороны:");
-		squadBrightSide.forEach(System.out::println);
-		System.out.println();
-		System.out.println("Отряд тёмной стороны:");
-		squadDarkSide.forEach(System.out::println);
-		System.out.println();
-
-		System.out.println("Лечим защитника светлой стороны:");
-		heal(squadBrightSide, "Monk");
-		System.out.println();
-		System.out.println("Лечим защитника тёмной стороны:");
-		heal(squadDarkSide, "Wizard");
+		while (true) {
+			ConsoleView.view();
+			System.out.println("Нажмите Enter");
+			scanner.nextLine();
+		}
 	}
 
-	public static ArrayList<BasicCharacter> createSquad(int charactersLimit, int charactersUnique) {
+	public static void init() {
 
-		ArrayList<BasicCharacter> list = new ArrayList<>();
+		darkSide = new ArrayList<>();
+		brightSide = new ArrayList<>();
 
-		Random rand = new Random();
+		int x = 1;
+		int y = 1;
 
-		for (int i = 0; i < charactersLimit; i++) {
-			if (charactersUnique == 5) {
-				switch (rand.nextInt(1, charactersUnique)) {
-					case 1 -> list.add(new Archer(list));
-					case 2 -> list.add(new Farmer(list));
-					case 3 -> list.add(new Outlaw(list));
-					case 4 -> list.add(new Monk(list));
-					case 5 -> list.add(new Spearman(list));
-				}
-			} else if (charactersUnique == 4) {
-				switch (rand.nextInt(1, charactersUnique)) {
-					case 1 -> list.add(new Farmer(list));
-					case 2 -> list.add(new Outlaw(list));
-					case 3 -> list.add(new Sniper(list));
-					case 4 -> list.add(new Wizard(list));
-				}
+		for (int i = 0; i < SQUAD_SIZE; i++) {
+			switch (new Random().nextInt(4)) {
+				case 0 -> brightSide.add(new Archer("Войны света", x++, y));
+				case 1 -> brightSide.add(new Farmer("Войны света", x++, y));
+				case 2 -> brightSide.add(new Outlaw("Войны света", x++, y));
+				default -> brightSide.add(new Monk("Войны света", x++, y));
 			}
 		}
-		return list;
-	}
 
-	public static void heal(ArrayList<BasicCharacter> squad, String healer) {
+		x = 1;
+		y = 10;
 
-		squad.add(new Outlaw(squad));
-		squad.get(10).setHealth(2);
-		System.out.println(squad.get(10));
-		System.out.println("Здоровье раненного разбойника до лечения: " + squad.get(10).getHealth());
-
-		if (healer.equalsIgnoreCase("Monk")) {
-			squad.add(new Monk(squad));
-		} else {
-			squad.add(new Wizard(squad));
+		for (int i = 0; i < SQUAD_SIZE; i++) {
+			switch (new Random().nextInt(4)) {
+				case 0 -> darkSide.add(new Farmer("Войны тьмы", x++, y));
+				case 1 -> darkSide.add(new Outlaw("Войны тьмы", x++, y));
+				case 2 -> darkSide.add(new Spearman("Войны тьмы", x++, y));
+				default -> darkSide.add(new Wizard("Войны тьмы", x++, y));
+			}
 		}
-		squad.get(11).step();
-		System.out.println("Здоровье раненного разбойника после лечения: " + squad.get(10).getHealth());
-		System.out.println("Максимальный показатель здоровья разбойника: " + squad.get(10).getMaxHealth());
 	}
 }
