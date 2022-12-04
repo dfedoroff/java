@@ -4,8 +4,11 @@
 ---------------------------------------------|-------------------------------------------------------
 `/java-oop/HomeWork3`                        | Каталог файлов домашнего задания
 `/HomeWork3/src/Main.java`                   | Точка входа в программу
+`/HomeWork3/src/AnsiColors.java`             | Цвета раскраски в кодировке ANSI
+`/HomeWork3/src/ConsoleView.java`            | Рисует игровую доску в консоли
 `/HomeWork3/src/Interfaces/Informable.java`  | Интерфейс String getInfo()
 `/HomeWork3/src/Interfaces/Stepable.java`    | Интерфейс void step()
+`/HomeWork3/src/Classes/Coordinates.java`    | Координаты персонажей на игровой доске
 `/HomeWork3/src/Classes/BasicCharacter.java` | Суперкласс, содержащий конструктор класса, get() и set() методы, а также другие методы, необходимые для вывода информации о персонажах игры
 `/HomeWork3/src/Classes/Archer.java`         | Класс персонажа `Арбалетчик`
 `/HomeWork3/src/Classes/Farmer.java`         | Класс персонажа `Крестьянин`
