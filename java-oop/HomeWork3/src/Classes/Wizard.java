@@ -1,29 +1,9 @@
 package Classes;
 
-import Interfaces.Stepable;
+public class Wizard extends BasicCharacter {
 
-import java.util.ArrayList;
-
-public class Wizard extends BasicCharacter implements Stepable {
-
-    public Wizard(ArrayList<BasicCharacter> squad) {
-        super(17, 12, 0, new int[]{-5, -5}, 30, 9, false, true);
-        super.squad = squad;
-    }
-
-    @Override
-    public void step() {
-        BasicCharacter characterDamaged = squad.get(0);
-        for (BasicCharacter character : squad) {
-            if (character.getHealth() / character.getMaxHealth() < characterDamaged.getHealth() / characterDamaged.getMaxHealth()) {
-                characterDamaged = character;
-            }
-        }
-
-        characterDamaged.setHealth(characterDamaged.getHealth() - getDamage()[1]);
-
-        if (characterDamaged.getHealth() > characterDamaged.getMaxHealth()) {
-            characterDamaged.setHealth(characterDamaged.getMaxHealth());
-        }
+    public Wizard(String squad, int x, int y) {
+        super("Wizard", 17, 12, 0, new int []{-5, -5}, 30, 9, false, true, squad);
+        super.position = new Coordinates(x, y);
     }
 }
