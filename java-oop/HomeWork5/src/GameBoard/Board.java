@@ -37,7 +37,7 @@ public class Board {
     public void removeTheDead() {
         for (BasicCharacter[] line : board) {
             for (BasicCharacter character : line)
-                if (character != null && character.getStatus().equals("dead"))
+                if (character != null && character.getStatus().equals("убит"))
                     board[character.getPosition().x][character.getPosition().y] = null;
         }
     }
