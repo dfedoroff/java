@@ -8,6 +8,15 @@ public class Task1 {
 		int[] array = fillArray(12);
 	}
 
+	public static void divide(double firstNum, double secondNum) {
+
+		if (secondNum ==  0) {
+			throw new ArithmeticException("На ноль делить нельзя.");
+		}
+		double result = firstNum / secondNum;
+		System.out.printf("Результат деления %f на %f = %f.\n", firstNum, secondNum, result);
+	}
+
 	public static int[] fillArray(int len) {
 
 		int[] array = new int[len];
