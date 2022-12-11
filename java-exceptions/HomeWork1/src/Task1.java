@@ -8,6 +8,7 @@ public class Task1 {
 		int[] array = fillArray(12);
 		System.out.println("Создаваемое исключение:");
 		divide(10, 0);
+		findElemIndex(array, 12);
 	}
 
 	public static void divide(double firstNum, double secondNum) {
