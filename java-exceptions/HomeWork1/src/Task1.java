@@ -6,6 +6,8 @@ public class Task1 {
 
 		String[] str = {"first string", null, "third string"};
 		int[] array = fillArray(12);
+		System.out.println("Создаваемое исключение:");
+		divide(10, 0);
 	}
 
 	public static void divide(double firstNum, double secondNum) {
