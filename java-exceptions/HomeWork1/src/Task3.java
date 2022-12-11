@@ -13,6 +13,24 @@ public class Task3 {
 		printArray(secondArray);
 	}
 
+	public static int[] diffArrays(int[] firstArr, int[] secondArr) {
+
+		if (firstArr == null || secondArr == null) {
+			throw new RuntimeException("Один из входящих массивов равен null.");
+		}
+
+		if (firstArr.length != secondArr.length) {
+			throw new RuntimeException("Массивы разной длины.");
+		}
+
+		int[] array = new int[firstArr.length];
+
+		for (int i = 0; i < array.length; i++) {
+			array[i] = firstArr[i] - secondArr[i];
+		}
+		return array;
+	}
+
 	public static int[] fillArray(int len) {
 
 		int[] array = new int[len];
