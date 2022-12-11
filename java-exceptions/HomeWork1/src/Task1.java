@@ -39,4 +39,16 @@ public class Task1 {
 		}
 		return array;
 	}
+
+	public static void printString(String[] str) {
+
+		int len = str.length;
+
+		for (int i = 0; i < len; i++) {
+			if (str[i] == null) {
+				throw new NullPointerException("Элемент строки с индексом " + i + " отсутствует.");
+			}
+			System.out.println(str[i]);
+		}
+	}
 }
