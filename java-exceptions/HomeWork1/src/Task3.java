@@ -13,6 +13,10 @@ public class Task3 {
 		printArray(secondArray);
 		System.out.println("Массив разницы элементов двух входящих массивов:");
 		printArray(diffArrays(firstArray, secondArray));
+		System.out.println("Создаваемое исключение:");
+		secondArray = fillArray(9);
+		printArray(diffArrays(firstArray, secondArray));
+		printArray(diffArrays(null, secondArray));
 	}
 
 	public static int[] diffArrays(int[] firstArr, int[] secondArr) {
