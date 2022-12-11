@@ -19,6 +19,15 @@ public class Task1 {
 		System.out.printf("Результат деления %f на %f = %f.\n", firstNum, secondNum, result);
 	}
 
+	public static void findElemIndex(int[] array, int index) {
+
+		if (index > array.length - 1) {
+			throw new ArrayIndexOutOfBoundsException("Элемент c индексом " + index + " отсутствует.");
+		} else {
+			System.out.printf("Элемент с индексом %d равен %d.\n", index, array[index]);
+		}
+	}
+
 	public static int[] fillArray(int len) {
 
 		int[] array = new int[len];
