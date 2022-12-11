@@ -11,6 +11,8 @@ public class Task3 {
 		int[] secondArray = fillArray(10);
 		System.out.println("Второй массив:");
 		printArray(secondArray);
+		System.out.println("Массив разницы элементов двух входящих массивов:");
+		printArray(diffArrays(firstArray, secondArray));
 	}
 
 	public static int[] diffArrays(int[] firstArr, int[] secondArr) {
