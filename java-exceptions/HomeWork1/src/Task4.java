@@ -6,7 +6,11 @@ public class Task4 {
 	public static void main(String[] args) {
 
 		int[] firstArray = fillArray(10);
+		System.out.println("Первый массив:");
+		printArray(firstArray);
 		int[] secondArray = fillArray(9);
+		System.out.println("Второй массив:");
+		printArray(secondArray);
 	}
 
 	public static int[] fillArray(int len) {
