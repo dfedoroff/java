@@ -11,6 +11,9 @@ public class Task4 {
 		int[] secondArray = fillArray(9);
 		System.out.println("Второй массив:");
 		printArray(secondArray);
+		System.out.println("Массив частных от целочисленного деления элементов двух входящих массивов:");
+		printArray(divideArrays(firstArray, secondArray));
+
 	}
 
 	public static int[] divideArrays(int[] firstArr, int[] secondArr) {
