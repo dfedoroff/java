@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class Task4 {
@@ -17,5 +18,9 @@ public class Task4 {
 			arr[i] = rand.nextInt(1, 10);
 		}
 		return arr;
+	}
+
+	public static void printArray(int[] arr) {
+		System.out.println(Arrays.toString(arr));
 	}
 }
