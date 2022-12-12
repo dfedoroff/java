@@ -14,11 +14,11 @@ public class Task1 {
 
     public static void divideNums(double firstNum, double secondNum) {
 
-    if (secondNum == 0) {
-        throw new ArithmeticException("На ноль делить нельзя.");
-    }
-    double result = firstNum / secondNum;
-    System.out.printf("Результат деления %f на %f = %f.\n", firstNum, secondNum, result);
+        if (secondNum == 0) {
+            throw new ArithmeticException("На ноль делить нельзя.");
+        }
+        double result = firstNum / secondNum;
+        System.out.printf("Результат деления %f на %f = %f.\n", firstNum, secondNum, result);
     }
 
     public static void findElemIndex(int[] array, int index) {
@@ -47,7 +47,7 @@ public class Task1 {
         for (int i = 0; i < len; i++) {
             if (str[i] == null) {
                 throw new NullPointerException("Элемент строки с индексом " + i + " отсутствует.");
-        }
+            }
             System.out.println(str[i]);
         }
     }
