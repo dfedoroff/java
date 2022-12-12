@@ -8,7 +8,7 @@ public class Task4 {
         int[] firstArray = fillArray(10);
         System.out.println("Первый массив:");
         printArray(firstArray);
-        int[] secondArray = fillArray(9);
+        int[] secondArray = fillArray(10);
         System.out.println("Второй массив:");
         printArray(secondArray);
         System.out.println("Массив частных от целочисленного деления элементов двух входящих массивов:");
@@ -25,6 +25,9 @@ public class Task4 {
         int[] array = new int[firstArr.length];
 
         for (int i = 0; i < array.length; i++) {
+            if (secondArr[i] == 0) {
+                throw new RuntimeException("На ноль делить нельзя.");
+            }
             array[i] = firstArr[i] / secondArr[i];
         }
         return array;
@@ -36,7 +39,7 @@ public class Task4 {
         Random rand = new Random();
 
         for (int i = 0; i < len; i++) {
-            arr[i] = rand.nextInt(1, 10);
+            arr[i] = rand.nextInt(0, 10);
         }
         return arr;
     }
