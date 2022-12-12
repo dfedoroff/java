@@ -7,12 +7,12 @@ public class Task1 {
 		String[] str = {"first string", null, "third string"};
 		int[] array = fillArray(12);
 		System.out.println("Создаваемое исключение:");
-		divide(10, 0);
+		divideNums(10, 0);
 		findElemIndex(array, 12);
 		printString(str);
 	}
 
-	public static void divide(double firstNum, double secondNum) {
+	public static void divideNums(double firstNum, double secondNum) {
 
 		if (secondNum ==  0) {
 			throw new ArithmeticException("На ноль делить нельзя.");
