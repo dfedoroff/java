@@ -13,6 +13,20 @@ public class Task4 {
 		printArray(secondArray);
 	}
 
+	public static int[] divideArrays(int[] firstArr, int[] secondArr) {
+
+		if (firstArr.length != secondArr.length) {
+			throw new RuntimeException("Массивы разной длины.");
+		}
+
+		int[] array = new int[firstArr.length];
+
+		for (int i = 0; i < array.length; i++) {
+			array[i] = firstArr[i] / secondArr[i];
+		}
+		return array;
+	}
+
 	public static int[] fillArray(int len) {
 
 		int[] arr = new int[len];
