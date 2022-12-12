@@ -4,17 +4,17 @@ public class Task1 {
 
 	public static void main(String[] args) {
 
-		String[] str = {"first string", null, "third string"};
+		String[] strArray = {"first string", null, "third string"};
 		int[] array = fillArray(12);
 		System.out.println("Создаваемое исключение:");
 		divideNums(10, 0);
 		findElemIndex(array, 12);
-		printString(str);
+		printString(strArray);
 	}
 
 	public static void divideNums(double firstNum, double secondNum) {
 
-		if (secondNum ==  0) {
+		if (secondNum == 0) {
 			throw new ArithmeticException("На ноль делить нельзя.");
 		}
 		double result = firstNum / secondNum;
