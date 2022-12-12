@@ -3,52 +3,52 @@ import java.util.Random;
 
 public class Task3 {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		int[] firstArray = fillArray(10);
-		System.out.println("Первый массив:");
-		printArray(firstArray);
-		int[] secondArray = fillArray(10);
-		System.out.println("Второй массив:");
-		printArray(secondArray);
-		System.out.println("Массив разницы элементов двух входящих массивов:");
-		printArray(diffArrays(firstArray, secondArray));
-		System.out.println("Создаваемое исключение:");
-		secondArray = fillArray(9);
-		printArray(diffArrays(firstArray, secondArray));
-		printArray(diffArrays(null, secondArray));
-	}
+        int[] firstArray = fillArray(10);
+        System.out.println("Первый массив:");
+        printArray(firstArray);
+        int[] secondArray = fillArray(10);
+        System.out.println("Второй массив:");
+        printArray(secondArray);
+        System.out.println("Массив разницы элементов двух входящих массивов:");
+        printArray(diffArrays(firstArray, secondArray));
+        System.out.println("Создаваемое исключение:");
+        secondArray = fillArray(9);
+        printArray(diffArrays(firstArray, secondArray));
+        printArray(diffArrays(null, secondArray));
+    }
 
-	public static int[] diffArrays(int[] firstArr, int[] secondArr) {
+    public static int[] diffArrays(int[] firstArr, int[] secondArr) {
 
-		if (firstArr == null || secondArr == null) {
-			throw new RuntimeException("Один из входящих массивов равен null.");
-		}
+        if (firstArr == null || secondArr == null) {
+            throw new RuntimeException("Один из входящих массивов равен null.");
+        }
 
-		if (firstArr.length != secondArr.length) {
-			throw new RuntimeException("Массивы разной длины.");
-		}
+        if (firstArr.length != secondArr.length) {
+            throw new RuntimeException("Массивы разной длины.");
+        }
 
-		int[] array = new int[firstArr.length];
+        int[] array = new int[firstArr.length];
 
-		for (int i = 0; i < array.length; i++) {
-			array[i] = firstArr[i] - secondArr[i];
-		}
-		return array;
-	}
+        for (int i = 0; i < array.length; i++) {
+            array[i] = firstArr[i] - secondArr[i];
+        }
+        return array;
+    }
 
-	public static int[] fillArray(int len) {
+    public static int[] fillArray(int len) {
 
-		int[] array = new int[len];
-		Random rand = new Random();
+        int[] array = new int[len];
+        Random rand = new Random();
 
-		for (int i = 0; i < len; i++) {
-			array[i] = rand.nextInt(1, 10);
-		}
-		return array;
-	}
+        for (int i = 0; i < len; i++) {
+            array[i] = rand.nextInt(1, 10);
+        }
+        return array;
+    }
 
-	public static void printArray(int[] arr) {
-		System.out.println(Arrays.toString(arr));
-	}
+    public static void printArray(int[] arr) {
+        System.out.println(Arrays.toString(arr));
+    }
 }
