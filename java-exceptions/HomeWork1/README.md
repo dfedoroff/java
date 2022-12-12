@@ -6,6 +6,7 @@
 `/HomeWork1/.gitignore`      | Файл для исключения из индексации Git файлов и папок
 `/HomeWork1/README.md`       | Условия задач
 `/HomeWork1/src/Task1.java`  | Решение задачи 1
+`/HomeWork1/src/Task2.java`  | Решение задачи 2
 `/HomeWork1/src/Task3.java`  | Решение задачи 3
 `/HomeWork1/src/Task4.java`  | Решение задачи 4
 
