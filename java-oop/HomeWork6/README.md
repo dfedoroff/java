@@ -7,8 +7,7 @@
 `/HomeWork6/src/Controller.java`                           | Управляющий класс
 `/HomeWork6/src/Classes/AbstractTypes/BaseBehaviour.java`  | Интерфейс `String getInfo()` и `void step()`
 `/HomeWork6/src/Classes/AbstractTypes/BasicCharacter.java` | Суперкласс, содержащий конструктор класса, get() и set()
-`/HomeWork6/src/Classes/AbstractTypes/Coordinates.java`    | Координаты персонажей на игровой доске
- методы, а также другие методы, необходимые для вывода информации о персонажах игры
+`/HomeWork6/src/Classes/AbstractTypes/Coordinates.java`    | Координаты персонажей на игровой доске методы, а также другие методы, необходимые для вывода информации о персонажах игры
 `/HomeWork6/src/Classes/AbstractTypes/Squad.java`          | Взаимедействие персонажей на игровой доске
 `/HomeWork6/src/Classes/AbstractTypes/Healers.java`        | Абстартактный класс `Монаха` и `Волшебника`
 `/HomeWork6/src/Classes/AbstractTypes/Shooters.java`       | Абстартактный класс `Арбалетчика` и `Снайпера`
