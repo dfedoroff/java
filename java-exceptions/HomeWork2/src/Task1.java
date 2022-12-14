@@ -5,6 +5,7 @@ public class Task1 {
     public static void main(String[] args) {
 
         float fNum = inputFloat();
+        System.out.println("Ваше дробное число: " + fNum);
     }
 
     public static float inputFloat() {
