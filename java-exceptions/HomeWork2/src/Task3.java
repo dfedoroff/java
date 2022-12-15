@@ -7,4 +7,8 @@ public class Task3 {
         int a = 90;
         int b = 3;
     }
+
+    public static void printSum(Integer a, Integer b) {
+        System.out.println(a + b);
+    }
 }
