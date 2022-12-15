@@ -6,6 +6,7 @@
 `/HomeWork2/src/Task1.java`  | Решение задачи 1
 `/HomeWork2/src/Task2.java`  | Решение задачи 2
 `/HomeWork2/src/Task3.java`  | Решение задачи 3
+`/HomeWork2/src/Task4.java`  | Решение задачи 4
 `/HomeWork2/.gitignore`      | Файл для исключения из индексации Git файлов и папок
 `/HomeWork2/README.md`       | Условия задач
 
@@ -65,12 +66,4 @@ public static void printSum(Integer a, Integer b) throws FileNotFoundException {
 ### Описание:
 
 Разработайте программу, которая выбросит `Exception`, когда пользователь вводит пустую строку. Пользователю должно показаться сообщение, что пустые строки вводить нельзя. `Try` быть не должно.
-
-## Задача 5 (по желанию)
-
-### Описание:
-
-Придумайте структуру класса. Опишите класс в программе, создайте `json` с несколькими экземплярами. В программе с помощью `objectMapper` преобразуйте `json` в массив объектов.
-implementation("com.fasterxml.jackson.core:jackson-databind:2.14.0")
-
 
