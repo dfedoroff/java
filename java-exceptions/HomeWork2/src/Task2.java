@@ -6,6 +6,10 @@ public class Task2 {
         int index = 8;
         int d = 0;
 
+        if (intArray == null) {
+            throw new RuntimeException("Указатель не может указывать на null.");
+        }
+
         if (index > intArray.length - 1) {
             throw new ArrayIndexOutOfBoundsException("Индекс " + index + " выходит за пределы массива.");
         }
