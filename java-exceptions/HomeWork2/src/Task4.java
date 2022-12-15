@@ -8,5 +8,9 @@ public class Task4 {
 
         System.out.print("Введите строку: ");
         String input = scan.nextLine();
+
+        if (input == null || input.equals("") || input.trim().isEmpty()) {
+            throw new IllegalArgumentException("Пустую строку вводить нельзя.");
+        }
     }
 }
