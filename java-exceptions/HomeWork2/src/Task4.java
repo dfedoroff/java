@@ -12,5 +12,8 @@ public class Task4 {
         if (input == null || input.equals("") || input.trim().isEmpty()) {
             throw new IllegalArgumentException("Пустую строку вводить нельзя.");
         }
+
+        System.out.println("Вы ввели: " + input);
+        scan.close();
     }
 }
