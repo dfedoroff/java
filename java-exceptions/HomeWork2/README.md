@@ -5,6 +5,7 @@
 `/java-exceptions/HomeWork2` | Каталог файлов домашнего задания
 `/HomeWork2/src/Task1.java`  | Решение задачи 1
 `/HomeWork2/src/Task2.java`  | Решение задачи 2
+`/HomeWork2/src/Task3.java`  | Решение задачи 3
 `/HomeWork2/.gitignore`      | Файл для исключения из индексации Git файлов и папок
 `/HomeWork2/README.md`       | Условия задач
 
