@@ -11,10 +11,12 @@ public class Task1 {
     public static float inputFloat() {
 
         Scanner scan = new Scanner(System.in);
+
+        String regex = "[+-]?[0-9]+\\.[0-9]+";
         System.out.print("Введите дробное число: ");
         String input = scan.next();
 
-        while (!input.matches("[+-]?[0-9]+\\.[0-9]+")) {
+        while (!input.matches(regex)) {
             System.out.println("Это не дробное число.");
             System.out.print("Повторите ввод: ");
             input = scan.next();
