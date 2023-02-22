@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file_path="/home/ubuntu/Documents/geek_brains/java/test-february-2023/Игрушки/игрушки_для_дошколят/мягкие_игрушки"
+file_path="/home/ubuntu/Documents/geek_brains/java/test-february-2023/Игрушки/Игрушки_для_дошколят/мягкие_игрушки"
 id=$(<softtoysfile)
 id=$((id + 1))
 toy="мягкая_игрушка"

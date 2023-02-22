@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file_path="/home/ubuntu/Documents/geek_brains/java/test-february-2023/Игрушки/игрушки_для_школьников/настольные_игры"
+file_path="/home/ubuntu/Documents/geek_brains/java/test-february-2023/Игрушки/Игрушки_для_школьников/настольные_игры"
 id=$(<tablegamesfile)
 id=$((id + 1))
 toy="настольная_игра"

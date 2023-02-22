@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file_path="/home/ubuntu/Documents/geek_brains/java/test-february-2023/Игрушки/игрушки_для_дошколят/машинки"
+file_path="/home/ubuntu/Documents/geek_brains/java/test-february-2023/Игрушки/Игрушки_для_дошколят/машинки"
 id=$(<carsfile)
 id=$((id + 1))
 toy="машинка"
