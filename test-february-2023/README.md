@@ -34,12 +34,21 @@
 java/
 └─ test-february-2023/
    ├─ bash_scripts/
-   ├─ ├─ add_cars.sh
-   ├─ ├─ add_constructors.sh
-   ├─ ├─ add_dolls.sh
-   ├─ ├─ add_robots.sh
-   ├─ ├─ add_softtoys.sh
-   ├─ └─ add_tablegames.sh
+   |  ├─ add_cars.sh
+   |  ├─ add_constructors.sh
+   |  ├─ add_dolls.sh
+   |  ├─ add_robots.sh
+   |  ├─ add_softtoys.sh
+   |  └─ add_tablegames.sh
+   ├─ Игрушки/
+   |  ├─ Игрушки_для_дошколят
+   |  |  ├─ куклы
+   |  |  ├─ машинки
+   |  |  └─ мягкие_игрушки
+   |  └─ Игрушки_для_школьников
+   |     ├─ конструктор
+   |     ├─ настольные_игры
+   |     └─ роботы
    ├─.gitignore
    └─ README.md
 ```
@@ -50,6 +59,7 @@ java/
 -----------------------------------------|--------------------------------------------------------------------------------------------
 `/java/test-february-2023`               | Кaтaлoг пpoвepoчнoй paбoты
 `/java/test-february-2023/bash_scripts/` | Кaтaлoг bash-скриптов
+`/java/test-february-2023/Игрушки/`      | Кaтaлoг с текстовыми фалами игрушек
 `/test-february-2023/.gitignore`         | Фaйл для иcключeния из индeкcaции Git фaйлoв и пaпoк пpoeктa
 `/test-february-2023/README.md`          | Oпиcaниe зaдaчи, eё peшeния, a тaкжe дpyгих фaйлoв пpoeктa
 
