@@ -271,7 +271,7 @@ $ snap list
 ```bash
 #!/bin/bash
 
-file_path="/home/ubuntu/Documents/geek_brains/java/test-february-2023/Игрушки/игрушки_для_школьников/роботы"
+file_path="/home/ubuntu/Documents/geek_brains/java/test-february-2023/Игрушки/Игрушки_для_школьников/роботы"
 id=$(<robotsfile)
 id=$((id + 1))
 toy="робот"
