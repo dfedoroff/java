@@ -12,4 +12,14 @@ public class Queue {
             toy = manager.nextToy(false);
         }
     }
+
+    public Queue(ToyManager manager, int quantity, boolean removeAfterQueueing) {
+        this.removeAfterGetting = removeAfterQueueing;
+        Toy toy = manager.nextToy(removeAfterQueueing);
+
+        for (int i = 1; i < quantity && toy != null; i++) {
+            queue.offer(toy);
+            toy = manager.nextToy(removeAfterQueueing);
+        }
+    }
 }
