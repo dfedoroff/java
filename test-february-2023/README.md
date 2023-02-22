@@ -287,7 +287,7 @@ echo "${text_line}" >> "${file_path}"
 echo "${id}" > robotsfile
 ```
 
-Все 6 bash-скриптов можно найти в папке [bash_scripts](https://github.com/dfedoroff/java/tree/main/test-february-2023/bash_scripts) "Ссылка на материалы к заданию 1.5.").
+Все 6 bash-скриптов можно найти в папке [bash_scripts](https://github.com/dfedoroff/java/tree/main/test-february-2023/bash_scripts "Ссылка на bash-скрипты к заданию 1.5.").
 
 Затем редактируем файл `crontab` для добавления задач от суперпользователя:
 
