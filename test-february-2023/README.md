@@ -299,8 +299,8 @@ $ sudo crontab -e
 
 ```bash
 */3 * * * * /home/ubuntu/Documents/geek_brains/java/test-february-2023/bash_scripts/add_robots.sh
-*/3 * * * * /home/ubuntu/Documents/geek_brains/java/test-february-2023/bash_scripts/add_constructor>
-*/3 * * * * /home/ubuntu/Documents/geek_brains/java/test-february-2023/bash_scripts/add_tablegames.>
+*/3 * * * * /home/ubuntu/Documents/geek_brains/java/test-february-2023/bash_scripts/add_constructors.sh
+*/3 * * * * /home/ubuntu/Documents/geek_brains/java/test-february-2023/bash_scripts/add_tablegames.sh
 */3 * * * * /home/ubuntu/Documents/geek_brains/java/test-february-2023/bash_scripts/add_dolls.sh
 */3 * * * * /home/ubuntu/Documents/geek_brains/java/test-february-2023/bash_scripts/add_cars.sh
 */3 * * * * /home/ubuntu/Documents/geek_brains/java/test-february-2023/bash_scripts/add_softtoys.sh
