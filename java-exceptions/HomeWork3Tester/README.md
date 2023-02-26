@@ -24,18 +24,22 @@ java/
    └─ HomeWork3Tester/
       ├─ src/
       |  ├─ Main.java
-      |  └─ Registration.java
+      |  ├─ Registration.java
+      |  ├─ WrongLoginException.java
+      |  └─ WrongPasswordException.java
       ├─.gitignore
       └─ README.md
 ```
 
 Пpoeкт практического задания по продвинутой работе с исключениями в Java cтpyктypиpoвaн в oднoм кaтaлoгe. Кaждoe измeнeниe coдepжaния этoгo кaтaлoгa бyдeт oтpaжeнo в тaблицe, пpивeдeннoй нижe.
 
-Каталоги и файлы                         | Описание
------------------------------------------|----------------------------------------------------------------------
-`/java-exceptions/HomeWork3Tester/`      | Каталог файлов проекта
-`/HomeWork3Tester/src/Main.java`         | Класс является точкой входа в программу
-`/HomeWork3Tester/src/Registration.java` | Класс проверяет логин и пароль на соответствие определенным критериям
-`/HomeWork3Tester/.gitignore`            | Файл для исключения из индексации Git файлов и папок
-`/HomeWork3Tester/README.md`             | Условия задачи
+Каталоги и файлы                                   | Описание
+---------------------------------------------------|----------------------------------------------------------------------
+`/java-exceptions/HomeWork3Tester/`                | Каталог файлов проекта
+`/HomeWork3Tester/src/Main.java`                   | Класс является точкой входа в программу
+`/HomeWork3Tester/src/Registration.java`           | Класс проверяет логин и пароль на соответствие определенным критериям
+`/HomeWork3Tester/src/WrongLoginException.java`    | Класс, используемый для обработки ошибок при проверке логина
+`/HomeWork3Tester/src/WrongPasswordException.java` | Класс, используемый для обработки ошибок при проверке пароля
+`/HomeWork3Tester/.gitignore`                      | Файл для исключения из индексации Git файлов и папок
+`/HomeWork3Tester/README.md`                       | Условие задачи
 
