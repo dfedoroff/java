@@ -4,5 +4,7 @@ public class Main {
         String login = "NumsLettersLatin_91";
         String password = "19_LatinLettersNums";
         String confirmPassword = "19_LatinLettersNums";
+
+        boolean isRegistered = Registration.register(login, password, confirmPassword);
     }
 }
