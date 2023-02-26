@@ -18,4 +18,15 @@ public class Registration {
             throw new WrongLoginException();
         }
     }
+
+    private static void validatePassword(String password, String confirmPassword) throws WrongPasswordException {
+        String regex = "^[a-zA-Z0-9_]{1,19}$";
+
+        if (!password.matches(regex)) {
+            throw new WrongPasswordException("Пароль должен содержать только латинские буквы, цифры и знаки подчеркивания и быть длиной меньше 20 символов");
+        }
+        if (!password.equals(confirmPassword)) {
+            throw new WrongPasswordException("Пароль и подтверждение пароля не совпадают");
+        }
+    }
 }
