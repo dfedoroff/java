@@ -22,6 +22,8 @@
 java/
 └─ java-exceptions/
    └─ HomeWork3Tester/
+      ├─ src/
+      |  └─ Main.java
       ├─.gitignore
       └─ README.md
 ```
@@ -31,6 +33,7 @@ java/
 Каталоги и файлы                    | Описание
 ------------------------------------|-----------------------------------------------------
 `/java-exceptions/HomeWork3Tester/` | Каталог файлов проекта
+`/HomeWork3Tester/src/Main.java`    | Класс является точкой входа в программу
 `/HomeWork3Tester/.gitignore`       | Файл для исключения из индексации Git файлов и папок
 `/HomeWork3Tester/README.md`        | Условия задачи
 
