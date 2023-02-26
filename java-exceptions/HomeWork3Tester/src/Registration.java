@@ -10,4 +10,12 @@ public class Registration {
             return false;
         }
     }
+
+    private static void validateLogin(String login) throws WrongLoginException {
+        String regex = "^[A-Za-z0-9_]{1,19}$";
+
+        if (!login.matches(regex)) {
+            throw new WrongLoginException();
+        }
+    }
 }
