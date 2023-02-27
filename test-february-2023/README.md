@@ -35,28 +35,28 @@
 java/
 └─ test-february-2023/
    ├─ bash_scripts/
-   |  ├─ add_cars.sh
-   |  ├─ add_constructors.sh
-   |  ├─ add_dolls.sh
-   |  ├─ add_robots.sh
-   |  ├─ add_softtoys.sh
-   |  └─ add_tablegames.sh
+   │  ├─ add_cars.sh
+   │  ├─ add_constructors.sh
+   │  ├─ add_dolls.sh
+   │  ├─ add_robots.sh
+   │  ├─ add_softtoys.sh
+   │  └─ add_tablegames.sh
    ├─ Игрушки/
-   |  ├─ Игрушки_для_дошколят
-   |  |  ├─ куклы
-   |  |  ├─ машинки
-   |  |  └─ мягкие_игрушки
-   |  └─ Игрушки_для_школьников
-   |     ├─ конструктор
-   |     ├─ настольные_игры
-   |     └─ роботы
+   │  ├─ Игрушки_для_дошколят/
+   │  │  ├─ куклы
+   │  │  ├─ машинки
+   │  │  └─ мягкие_игрушки
+   │  └─ Игрушки_для_школьников/
+   │     ├─ конструктор
+   │     ├─ настольные_игры
+   │     └─ роботы
    ├─ src/
-   |  ├─ InputValidation.java
-   |  ├─ Main.java
-   |  ├─ Queue.java
-   |  ├─ Toy.java
-   |  ├─ ToyDatabase.java
-   |  └─ ToyManager.java
+   │  ├─ InputValidation.java
+   │  ├─ Main.java
+   │  ├─ Queue.java
+   │  ├─ Toy.java
+   │  ├─ ToyDatabase.java
+   │  └─ ToyManager.java
    ├─.gitignore
    ├─ README.md
    ├─ result.txt
