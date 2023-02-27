@@ -23,10 +23,10 @@ java/
 └─ java-exceptions/
    └─ HomeWork3Tester/
       ├─ src/
-      |  ├─ Main.java
-      |  ├─ Registration.java
-      |  ├─ WrongLoginException.java
-      |  └─ WrongPasswordException.java
+      │  ├─ Main.java
+      │  ├─ Registration.java
+      │  ├─ WrongLoginException.java
+      │  └─ WrongPasswordException.java
       ├─.gitignore
       └─ README.md
 ```
