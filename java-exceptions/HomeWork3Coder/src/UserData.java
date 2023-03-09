@@ -15,4 +15,14 @@ public class UserData {
         this.phoneNumber = phoneNumber;
         this.gender = gender;
     }
+
+    @Override
+    public String toString() {
+        return "<" + lastName + ">" +
+                "<" + firstName + ">" +
+                "<" + patronymicName + ">" +
+                "<" + birthDate + ">" +
+                "<" + phoneNumber + ">" +
+                "<" + gender + ">";
+    }
 }
