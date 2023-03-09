@@ -33,4 +33,11 @@ public class UserInputParser {
             throw new WrongParsingDataException("Ошибка парсинга. Неверный формат даты рождения", e);
         }
     }
+
+    private static String validatePhoneNumber(String phoneNumber) throws WrongParsingDataException {
+        if (!phoneNumber.matches("^\\d{1,15}$")) {
+            throw new WrongParsingDataException("Ошибка парсинга. Неверный формат телефонного номера");
+        }
+        return phoneNumber;
+    }
 }
