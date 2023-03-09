@@ -15,4 +15,11 @@ public class UserInputParser {
 
         return new UserData(lastName, firstName, patronymicName, birthDate, phoneNumber, gender);
     }
+
+    private static String validateName(String name, String type) throws WrongParsingDataException {
+        if (!name.matches("^[a-zA-Zа-яА-Я-]+$")) {
+            throw new WrongParsingDataException("Ошибка парсинга. Неверный формат " + type);
+        }
+        return name;
+    }
 }
