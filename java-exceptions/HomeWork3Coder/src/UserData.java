@@ -25,4 +25,8 @@ public class UserData {
                 "<" + phoneNumber + ">" +
                 "<" + gender + ">";
     }
+
+    public String getLastName() {
+        return lastName;
+    }
 }
