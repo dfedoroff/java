@@ -15,5 +15,6 @@ public class Main {
 		}
 
         System.out.println("Изначальный массив: " + Arrays.toString(array));
+        HeapSort.sort(array);
 	}
 }
