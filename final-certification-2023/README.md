@@ -189,3 +189,17 @@ $ sudo dpkg --purge mysql-apt-config
 ![](./diagrams/uml.drawio.png "Диаграмма классов")
  
 </details>
+
+<details>
+<summary><b>2.2.</b></summary>
+
+Cоздаем базу данных `Друзья человека`:
+
+```sql
+CREATE DATABASE IF NOT EXISTS HumanFriends;
+USE HumanFriends;
+```
+
+![](./images/2.2_task_screenshot.png "Подтверждение выполнения задания 2.2.")
+
+</details>
