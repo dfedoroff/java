@@ -153,3 +153,18 @@ $ systemctl status mysql.service
 
 </details>
 
+<details>
+<summary><b>1.4.</b></summary>
+
+Установливаем и удаляем `deb-пакет` с помощью `dpkg`:
+
+```bash
+$ sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
+$ sudo dpkg -r mysql-apt-config
+$ sudo dpkg --purge mysql-apt-config
+```
+
+![](./images/1.4_task_screenshot.png "Подтверждение выполнения задания 1.4.")
+
+</details>
+
