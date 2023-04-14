@@ -255,6 +255,61 @@ CREATE TABLE AnimalCommands
 );
 ```
 
-![](./images/2.3_task_screenshot.png "Подтверждение выполнения задания 2.2.")
+![](./images/2.3_task_screenshot.png "Подтверждение выполнения задания 2.3.")
+
+</details>
+
+<details>
+<summary><b>2.4.</b></summary>
+
+Заполняем низкоуровневые таблицы `именами животных`, `командами` которые они выполняют и `датами рождения`:
+
+```sql
+USE HumanFriends;
+
+INSERT INTO Commands(name)
+VALUES
+ ('Ко мне'),
+ ('Повернуть направо'),
+ ('Повернуть налево'),
+ ('Стой'),
+ ('Назад');
+  
+INSERT INTO AnimalGroup (name)
+VALUES
+ ('Вьючные животные'),
+ ('Домашние животные');
+  
+INSERT INTO AnimalGenius (name, group_id)
+VALUES
+ ('Лошадь', 1),
+ ('Верблюд', 1),
+ ('Осел', 1),
+ ('Кошка', 2),
+ ('Собака', 2),
+ ('Хомяк', 2);
+   
+INSERT INTO KennelAnimal (name, birthDate, genius_id)
+VALUES
+ ('Руни', '2022-03-08', 1),
+ ('Фаэтон', '2022-09-10', 1),
+ ('Буффи ', '2021-07-15', 3),
+ ('Гармония', '2020-09-05', 2),
+ ('Лайт', '2022-12-10', 5),
+ ('Клео', '2023-04-08', 6),
+ ('Томас', '2023-04-16', 4);
+   
+INSERT INTO AnimalCommands (animal_id, command_id)
+VALUES
+ (1, 3), (2, 3), (2, 4), (3, 4),
+ (4, 5), (5, 1), (5, 4), (6, 2),
+ (7, 1);
+```
+
+![](./images/2.4.1_task_screenshot.png "Подтверждение выполнения задания 2.4.")
+![](./images/2.4.2_task_screenshot.png "Подтверждение выполнения задания 2.4.")
+![](./images/2.4.3_task_screenshot.png "Подтверждение выполнения задания 2.4.")
+![](./images/2.4.4_task_screenshot.png "Подтверждение выполнения задания 2.4.")
+![](./images/2.4.5_task_screenshot.png "Подтверждение выполнения задания 2.4.")
 
 </details>
