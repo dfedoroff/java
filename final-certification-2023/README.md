@@ -333,3 +333,21 @@ SELECT * from KennelAnimal WHERE genius_id = 3;
 ![](./images/2.5.2_task_screenshot.png "Подтверждение выполнения задания 2.5.")
 
 </details>
+
+<details>
+<summary><b>2.6.</b></summary>
+
+Создаем новую таблицу `молодые животные` в которую попадут все животные старше `1` года, но младше `3` лет и в отдельном столбце с точностью до месяца подсчитать возраст животных в новой таблице:
+
+```sql
+CREATE TABLE YoungAnimals AS
+   SELECT id, name, birthDate, 
+   datediff(curdate(),birthDate) DIV 31 as age, genius_id 
+   from KennelAnimal 
+   WHERE date_add(birthDate, INTERVAL 1 YEAR) < curdate() 
+         AND date_add(birthDate, INTERVAL 3 YEAR) > curdate();
+```
+
+![](./images/2.6_task_screenshot.png "Подтверждение выполнения задания 2.6.")
+
+</details>
