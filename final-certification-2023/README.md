@@ -313,3 +313,23 @@ VALUES
 ![](./images/2.4.5_task_screenshot.png "Подтверждение выполнения задания 2.4.")
 
 </details>
+
+<details>
+<summary><b>2.5.</b></summary>
+
+Объединить таблицы `лошади` и `ослы` в одну таблицу, удалив из таблицы `верблюдов`, так как верблюдов решили перевезти в другой питомник на зимовку:
+
+```sql
+USE HumanFriends;
+DELETE FROM KennelAnimal WHERE genius_id = 2;
+
+CREATE TABLE HorseAndDonkey AS
+SELECT * from KennelAnimal WHERE genius_id = 1
+UNION
+SELECT * from KennelAnimal WHERE genius_id = 3;
+```
+
+![](./images/2.5.1_task_screenshot.png "Подтверждение выполнения задания 2.5.")
+![](./images/2.5.2_task_screenshot.png "Подтверждение выполнения задания 2.5.")
+
+</details>
