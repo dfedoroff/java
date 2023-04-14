@@ -340,14 +340,57 @@ SELECT * from KennelAnimal WHERE genius_id = 3;
 Создаем новую таблицу `молодые животные` в которую попадут все животные старше `1` года, но младше `3` лет и в отдельном столбце с точностью до месяца подсчитать возраст животных в новой таблице:
 
 ```sql
+USE HumanFriends;
 CREATE TABLE YoungAnimals AS
-   SELECT id, name, birthDate, 
-   datediff(curdate(),birthDate) DIV 31 as age, genius_id 
-   from KennelAnimal 
-   WHERE date_add(birthDate, INTERVAL 1 YEAR) < curdate() 
-         AND date_add(birthDate, INTERVAL 3 YEAR) > curdate();
+SELECT id, name, birthDate, 
+datediff(curdate(),birthDate) DIV 31 as age, genius_id 
+from KennelAnimal 
+WHERE date_add(birthDate, INTERVAL 1 YEAR) < curdate() 
+AND date_add(birthDate, INTERVAL 3 YEAR) > curdate();
 ```
 
 ![](./images/2.6_task_screenshot.png "Подтверждение выполнения задания 2.6.")
+
+</details>
+
+<details>
+<summary><b>2.7.</b></summary>
+
+Объединяем все таблицы в одну, при этом сохраняя поля, указывающие на прошлую принадлежность к старым таблицам:
+
+```sql
+USE HumanFriends;
+CREATE TABLE CombinedAnimals
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(30),
+    birthDate DATE,
+    age INT,
+    genius_id INT,
+    source_table VARCHAR(30)
+);
+```
+
+```sql
+INSERT INTO CombinedAnimals (name, birthDate, age, genius_id, source_table)
+SELECT name, birthDate, age, genius_id, 'YoungAnimals' FROM YoungAnimals;
+
+INSERT INTO CombinedAnimals (name, birthDate, age, genius_id, source_table)
+SELECT name, birthDate, NULL, genius_id, 'AnimalGenius' FROM AnimalGenius;
+
+INSERT INTO CombinedAnimals (name, birthDate, age, genius_id, source_table)
+SELECT name, NULL, NULL, id, 'AnimalGroup' FROM AnimalGroup;
+
+INSERT INTO CombinedAnimals (name, birthDate, age, genius_id, source_table)
+SELECT name, NULL, NULL, id, 'Commands' FROM Commands;
+
+INSERT INTO CombinedAnimals (name, birthDate, age, genius_id, source_table)
+SELECT name, birthDate, NULL, genius_id, 'HorseAndDonkey' FROM HorseAndDonkey;
+
+INSERT INTO CombinedAnimals (name, birthDate, age, genius_id, source_table)
+SELECT name, birthDate, NULL, genius_id, 'KennelAnimal' FROM KennelAnimal;
+```
+
+![](./images/2.7_task_screenshot.png "Подтверждение выполнения задания 2.7.")
 
 </details>
