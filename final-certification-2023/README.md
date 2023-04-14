@@ -148,7 +148,6 @@ $ systemctl status mysql.service
 ```
 
 ![](./images/1.3.1_task_screenshot.png "Подтверждение выполнения задания 1.3.")
-
 ![](./images/1.3.2_task_screenshot.png "Подтверждение выполнения задания 1.3.")
 
 </details>
@@ -167,4 +166,17 @@ $ sudo dpkg --purge mysql-apt-config
 ![](./images/1.4_task_screenshot.png "Подтверждение выполнения задания 1.4.")
 
 </details>
+
+<details>
+<summary><b>1.5.</b></summary>
+
+Подтверждение истории команд в терминале для заданий с 1.1. по 1.4.:
+![](./images/1.1_task_screenshot.png "Подтверждение выполнения задания 1.1.")
+![](./images/1.2_task_screenshot.png "Подтверждение выполнения задания 1.2.")
+![](./images/1.3.1_task_screenshot.png "Подтверждение выполнения задания 1.3.")
+![](./images/1.3.2_task_screenshot.png "Подтверждение выполнения задания 1.3.")
+![](./images/1.4_task_screenshot.png "Подтверждение выполнения задания 1.4.")
+
+</details>
+
 
