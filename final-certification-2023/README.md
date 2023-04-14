@@ -69,34 +69,35 @@ java/
    │  ├─ 2.5.2_task_screenshot.png
    │  ├─ 2.6_task_screenshot.png
    │  └─ 2.7_task_screenshot.png
-   ├─ images/
-   │  └─ src/
-   │     └─ com/
-   │        └─ kennel/
-   │           ├─ controller/
-   │           ├─ └─ KennelAccounting.java
-   │           ├─ model/
-   │           │  ├─ implement/
-   │           │  │  ├─ Camel.java
-   │           │  │  ├─ Cat.java
-   │           │  │  ├─ Dog.java
-   │           │  │  ├─ Donkey.java
-   │           │  │  ├─ Hamster.java
-   │           │  │  └─ Horse.java
-   │           │  ├─ AbstractAnimal.java
-   │           │  ├─ AbstractPackAnimal.java
-   │           │  ├─ AbstractPet.java
-   │           │  ├─ AnimalGenius.java
-   │           │  └─ Skill.java
-   │           ├─ storage/
-   │           │  ├─ KennelStorage.java
-   │           │  └─ Storage.java
-   │           ├─ util/
-   │           │  └─ Counter.java
-   │           ├─ view/
-   │           │  ├─ ConsoleView.java
-   │           │  └─ View.java
-   │           └─ Main.java
+   ├─ src/
+   │  └─ com/
+   │     └─ kennel/
+   │        ├─ controller/
+   │        ├─ └─ KennelAccounting.java
+   │        ├─ model/
+   │        │  ├─ implement/
+   │        │  │  ├─ Camel.java
+   │        │  │  ├─ Cat.java
+   │        │  │  ├─ Dog.java
+   │        │  │  ├─ Donkey.java
+   │        │  │  ├─ Hamster.java
+   │        │  │  └─ Horse.java
+   │        │  ├─ AbstractAnimal.java
+   │        │  ├─ AbstractPackAnimal.java
+   │        │  ├─ AbstractPet.java
+   │        │  ├─ AnimalGenius.java
+   │        │  └─ Skill.java
+   │        ├─ storage/
+   │        │  ├─ KennelStorage.java
+   │        │  └─ Storage.java
+   │        ├─ util/
+   │        │  └─ Counter.java
+   │        ├─ view/
+   │        │  ├─ ConsoleView.java
+   │        │  └─ View.java
+   │        └─ Main.java
+   ├─ Животные/
+   │  └─ Друзья_человека
    ├─ Вьючные_животные
    ├─ Домашние_животные
    ├─.gitignore
