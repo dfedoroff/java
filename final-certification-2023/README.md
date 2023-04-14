@@ -424,3 +424,10 @@ SELECT name, birthDate, NULL, genius_id, 'KennelAnimal' FROM KennelAnimal;
 Отвечает за хранение и управление данными о животных. Реализует интерфейс `Storage`, предоставляет методы для добавления, удаления и т.д.
 
 </details>
+
+<details>
+<summary><b>Интерфейс View</b></summary>
+
+Cодержит объявления методов для представления данных в пользовательском интерфейсе.
+
+</details>
