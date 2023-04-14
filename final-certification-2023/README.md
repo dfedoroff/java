@@ -394,3 +394,12 @@ SELECT name, birthDate, NULL, genius_id, 'KennelAnimal' FROM KennelAnimal;
 ![](./images/2.7_task_screenshot.png "Подтверждение выполнения задания 2.7.")
 
 </details>
+
+### 3. Заключительное задание итоговой aттecтaции
+
+<details>
+<summary><b>Класс Main</b></summary>
+
+Основной класс программы, содержащий метод `main()`, который запускает приложение. В этом классе создаются экземпляры классов `KennelAccounting`, `ConsoleView` и `KennelStorage`, а также осуществляется взаимодействие между ними.
+
+</details>
