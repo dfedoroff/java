@@ -50,6 +50,55 @@
 ```txt
 java/
 └─ final-certification-2023/
+   ├─ diagrams/
+   │  ├─ uml.drawio
+   │  └─ uml.drawio.png
+   ├─ images/
+   │  ├─ 1.1_task_screenshot.png
+   │  ├─ 1.2_task_screenshot.png
+   │  ├─ 1.3.1_task_screenshot.png
+   │  ├─ 1.4_task_screenshot.png
+   │  ├─ 2.2_task_screenshot.png
+   │  ├─ 2.3_task_screenshot.png
+   │  ├─ 2.4.1_task_screenshot.png
+   │  ├─ 2.4.2_task_screenshot.png
+   │  ├─ 2.4.3_task_screenshot.png
+   │  ├─ 2.4.4_task_screenshot.png
+   │  ├─ 2.4.5_task_screenshot.png
+   │  ├─ 2.5.1_task_screenshot.png
+   │  ├─ 2.5.2_task_screenshot.png
+   │  ├─ 2.6_task_screenshot.png
+   │  └─ 2.7_task_screenshot.png
+   ├─ images/
+   │  └─ src/
+   │     └─ com/
+   │        └─ kennel/
+   │           ├─ controller/
+   │           ├─ └─ KennelAccounting.java
+   │           ├─ model/
+   │           │  ├─ implement/
+   │           │  │  ├─ Camel.java
+   │           │  │  ├─ Cat.java
+   │           │  │  ├─ Dog.java
+   │           │  │  ├─ Donkey.java
+   │           │  │  ├─ Hamster.java
+   │           │  │  └─ Horse.java
+   │           │  ├─ AbstractAnimal.java
+   │           │  ├─ AbstractPackAnimal.java
+   │           │  ├─ AbstractPet.java
+   │           │  ├─ AnimalGenius.java
+   │           │  └─ Skill.java
+   │           ├─ storage/
+   │           │  ├─ KennelStorage.java
+   │           │  └─ Storage.java
+   │           ├─ util/
+   │           │  └─ Counter.java
+   │           ├─ view/
+   │           │  ├─ ConsoleView.java
+   │           │  └─ View.java
+   │           └─ Main.java
+   ├─ Вьючные_животные
+   ├─ Домашние_животные
    ├─.gitignore
    └─ README.md
 ```
