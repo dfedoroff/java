@@ -179,4 +179,13 @@ $ sudo dpkg --purge mysql-apt-config
 
 </details>
 
+### 2. Задание на проверку навыков работы c MySQL
 
+<details>
+<summary><b>2.1.</b></summary>
+
+Диаграмма классов:
+
+![](./diagrams/uml.drawio.png "Диаграмма классов")
+ 
+</details>
