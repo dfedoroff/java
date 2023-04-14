@@ -431,3 +431,10 @@ SELECT name, birthDate, NULL, genius_id, 'KennelAnimal' FROM KennelAnimal;
 Cодержит объявления методов для представления данных в пользовательском интерфейсе.
 
 </details>
+
+<details>
+<summary><b>Класс Counter</b></summary>
+
+Утилитный класс, используемый для подсчета количества экземпляров животных.
+
+</details>
