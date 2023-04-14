@@ -134,4 +134,22 @@ $ mv Друзья_человека Животные/
 
 </details>
 
+<details>
+<summary><b>1.3.</b></summary>
+
+Подключаем дополнительный репозиторий `MySQL`. Устанавливаем любой пакет из этого репозитория:
+
+```bash
+$ sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+$ sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
+$ sudo apt update
+$ sudo apt install mysql-server mysql-client
+$ systemctl status mysql.service
+```
+
+![](./images/1.3.1_task_screenshot.png "Подтверждение выполнения задания 1.3.")
+
+![](./images/1.3.2_task_screenshot.png "Подтверждение выполнения задания 1.3.")
+
+</details>
 
