@@ -461,8 +461,15 @@ Cодержит объявления методов для управления 
 </details>
 
 <details>
-<summary><b>AbstractPackAnimal</b></summary>
+<summary><b>Класс AbstractPackAnimal</b></summary>
 
-абстрактный класс, наследуется от `AbstractAnimal` и содержит дополнительные поля и методы для животных.
+Абстрактный класс, наследуется от `AbstractAnimal` и содержит дополнительные поля и методы для животных.
+
+</details>
+
+<details>
+<summary><b>Класс AbstractPet</b></summary>
+
+Абстрактный класс, наследуется от `AbstractAnimal` и содержит дополнительные поля и методы для домашних животных.
 
 </details>
