@@ -1,0 +1,6 @@
+FROM bellsoft/liberica-openjdk-alpine:latest
+WORKDIR /app
+COPY ./src ./src
+RUN javac -sourcepath ./src -d out ./src/main/Main.java ./src/operations/MathOperations.java ./src/validators/NumInputValidator.java ./src/validators/InputValidator.java
+CMD java -classpath ./out main.Main
+
