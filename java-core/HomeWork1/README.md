@@ -9,6 +9,7 @@
 `/HomeWork1/operations/MathOperations.java`    | Выполняет основные математические операции (сложение, вычитание, умножение, деление)
 `/HomeWork1/validators/InputValidator.java`    | Определяет метод для проверки ввода
 `/HomeWork1/validators/NumInputValidator.java` | Проверяет ввод пользователя, что он является целым числом
+`/HomeWork1/dockerfile`                        | Копирует исходный код приложения в образ
 
 ## Описание:
 
