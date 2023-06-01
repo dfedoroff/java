@@ -8,7 +8,6 @@ public class AIPlayer implements Player {
 
     @Override
     public void makeMove(GameField field) {
-        // Try to win
         for (int i = 0; i < field.getRows(); i++) {
             for (int j = 0; j < field.getColumns(); j++) {
                 if (field.isCellEmpty(i, j)) {
