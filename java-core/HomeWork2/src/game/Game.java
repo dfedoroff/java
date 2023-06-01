@@ -22,8 +22,8 @@ public class Game {
     public void start() {
         while (true) {
             playRound();
-            System.out.print("Сыграть еще раз? ");
-            if (!"Y".equalsIgnoreCase(new Scanner(System.in).next())) {
+            System.out.print("Сыграть еще раз? Да / Нет: ");
+            if (!"Да".equalsIgnoreCase(new Scanner(System.in).next())) {
                 break;
             }
         }
