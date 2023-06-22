@@ -5,7 +5,7 @@
 `/java-core/HomeWork5/`                                  | Каталог файлов домашнего задания
 `/HomeWork5/.gitignore`                                  | Файл для исключения из индексации Git файлов и папок
 `/HomeWork5/README.md`                                   | Условия задач
-`/HomeWork5/src/main/Main.java`                          | Является точкой входа в программу
+`/HomeWork5/src/Main.java`                               | Является точкой входа в программу
 `/HomeWork5/src/DirectoryBackUpper.java`                 | Создает резервные копии файлов в папок
 `/HomeWork5/src/DirectoryTreePrinter.java`               | Выводит дерево папок и файлов относительно корневой директории
 `/HomeWork5/src/TicTacToeFieldSerializer.java`           | Отвечает за сериализацию состояния игрового поля Tic Tac Toe в файл
