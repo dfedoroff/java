@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url('../assets/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#appLogo {
+    max-width: 150px;
+    height: auto;
+}
+
+nav {
+    background-color: rgba(245, 245, 245, 0.8); /* Делаем фон немного прозрачным */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #e0e0e0;
+}
+
+#notesSection {
+    background-color: rgba(255, 255, 255, 0.8); /* Добавим немного прозрачности для контраста с фоном */
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#noteInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    resize: vertical;
+}
+
+#addNoteBtn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addNoteBtn:hover {
+    background-color: #0056b3;
+}
+
+#notesList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#notesList li {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
