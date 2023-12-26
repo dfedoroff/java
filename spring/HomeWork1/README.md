@@ -7,3 +7,7 @@
 3. Выполнить команду по выполнению сборки.
 
 4. Сделать скриншот результатов сборки и прислать в качестве ДЗ.
+
+![](./images/screenshot_create_mvn_project.png)
+
+![](./images/screenshot_build_mvn_project.png)
