@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Добро пожаловать</title>
+</head>
+<body>
+    <h1>Добро пожаловать в систему управления студентами</h1>
+    <p>Для взаимодействия с приложением используйте следующие конечные точки:</p>
+    <ul>
+        <li>GET /student - получить всех студентов</li>
+        <li>GET /student/{id} - получить студента по ID</li>
+        <li>GET /student/search?name='studentName' - получить список студентов, чье имя содержит подстроку studentName</li>
+        <li>GET /group/{groupName}/student - получить всех студентов группы</li>
+        <li>POST /student - создать студента (принимает JSON)</li>
+        <li>DELETE /student/{id} - удалить студента</li>
+    </ul>
+</body>
+</html>
+
