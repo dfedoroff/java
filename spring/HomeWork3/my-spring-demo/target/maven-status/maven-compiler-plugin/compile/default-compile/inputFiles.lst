@@ -1,0 +1,16 @@
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/Application.java
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/api/BookController.java
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/api/BookRequest.java
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/api/IssueController.java
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/api/IssueRequest.java
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/api/ReaderController.java
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/api/ReaderRequest.java
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/model/Book.java
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/model/Issue.java
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/model/Reader.java
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/repository/BookRepository.java
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/repository/IssueRepository.java
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/repository/ReaderRepository.java
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/service/BookService.java
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/service/IssueService.java
+/home/ubuntu/Documents/geek_brains/java/spring/HomeWork3/my-spring-demo/src/main/java/ru/gb/myspringdemo/service/ReaderService.java

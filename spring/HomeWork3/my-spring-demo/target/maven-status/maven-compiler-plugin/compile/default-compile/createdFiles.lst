@@ -1,0 +1,16 @@
+ru/gb/myspringdemo/repository/BookRepository.class
+ru/gb/myspringdemo/api/ReaderController.class
+ru/gb/myspringdemo/model/Issue.class
+ru/gb/myspringdemo/service/IssueService.class
+ru/gb/myspringdemo/model/Book.class
+ru/gb/myspringdemo/api/BookRequest.class
+ru/gb/myspringdemo/api/IssueRequest.class
+ru/gb/myspringdemo/service/BookService.class
+ru/gb/myspringdemo/repository/IssueRepository.class
+ru/gb/myspringdemo/model/Reader.class
+ru/gb/myspringdemo/service/ReaderService.class
+ru/gb/myspringdemo/Application.class
+ru/gb/myspringdemo/api/IssueController.class
+ru/gb/myspringdemo/api/ReaderRequest.class
+ru/gb/myspringdemo/repository/ReaderRepository.class
+ru/gb/myspringdemo/api/BookController.class
