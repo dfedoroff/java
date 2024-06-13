@@ -11,7 +11,7 @@ import ru.gb.myspringdemo.service.IssueService;
 import java.util.NoSuchElementException;
 
 @Controller
-public class ReaderUIController {
+public class ReaderUiController {
 
     @Autowired
     private ReaderService readerService;

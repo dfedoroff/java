@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import ru.gb.myspringdemo.service.BookService;
 
 @Controller
-public class BookUIController {
+public class BookUiController {
 
     @Autowired
     private BookService bookService;

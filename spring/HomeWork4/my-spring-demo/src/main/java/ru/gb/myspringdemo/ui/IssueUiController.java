@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import ru.gb.myspringdemo.service.IssueService;
 
 @Controller
-public class IssueUIController {
+public class IssueUiController {
 
     @Autowired
     private IssueService issueService;
