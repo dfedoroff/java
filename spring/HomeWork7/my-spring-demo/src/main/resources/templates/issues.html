@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Issues</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<h1>Issues</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Book ID</th>
+        <th>Reader ID</th>
+        <th>Issued At</th>
+        <th>Returned At</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="issue : ${issues}">
+        <td th:text="${issue.id}">1</td>
+        <td th:text="${issue.bookId}">Book ID</td>
+        <td th:text="${issue.readerId}">Reader ID</td>
+        <td th:text="${issue.issued_at}">Issued At</td>
+        <td th:text="${issue.returned_at}">Returned At</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
