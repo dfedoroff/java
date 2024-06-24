@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .add-book-form {
+            margin-bottom: 20px;
+        }
+        .add-book-form input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+        }
+        .add-book-form button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>Books</h1>
+<div class="add-book-form">
+    <form th:action="@{/book}" method="post" th:object="${newBook}">
+        <input type="text" th:field="*{name}" placeholder="Enter book name" required />
+        <button type="submit">Add Book</button>
+    </form>
+</div>
+<ul>
+    <li th:each="book : ${books}" th:text="${book.name}"></li>
+</ul>
+</body>
+</html>
