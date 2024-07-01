@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reader's books</title>
+</head>
+<body>
+    <h1>Reader's list of books</h1>
+    <h2>Reader id: <span th:text="${reader.getId()}"></span>; Reader name: <span th:text="${reader.getName()}"></span></h2>
+    <ul>
+        <li th:each="book:${books}">
+            <p>
+                Book id: <span th:text="${book.getId()}"></span>;
+                Book title: <span th:text="${book.getName()}"></span>
+            </p>
+        </li>
+    </ul>
+    <table>
+        <tr>
+            <td>Issuance_id</td>
+            <td>Book_id</td>
+            <td>Issued_at</td>
+            <td>Returned_at</td>
+        </tr>
+        <tr th:each="issue:${issues}">
+            <td th:text="${issue.getId()}"></td>
+            <td th:text="${issue.getBookId()}"></td>
+            <td th:text="${issue.getIssued_at()}"></td>
+            <td th:text="${issue.getReturned_at()}"></td>
+        </tr>
+    </table>
+</body>
+</html>
