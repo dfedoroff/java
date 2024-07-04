@@ -1,0 +1,13 @@
+server:
+  port: 8380
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  application:
+    name: reader-service
+application:
+  timer:
+    enabled: true
+    timer-on: true

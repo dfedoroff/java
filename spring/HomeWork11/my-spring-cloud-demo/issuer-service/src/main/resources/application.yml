@@ -1,0 +1,13 @@
+server:
+  port: 8280
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  application:
+    name: issuer-service
+application:
+  timer:
+    enabled: true
+    timer-on: true
