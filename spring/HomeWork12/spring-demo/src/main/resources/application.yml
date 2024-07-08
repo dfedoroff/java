@@ -1,0 +1,7 @@
+#application:
+#  bank:
+#    url: http://bank.ru/api
+
+spring:
+  profiles:
+    active: prod
